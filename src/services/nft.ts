@@ -1,5 +1,5 @@
 import { FileWithPreview } from "src/types";
-import { Filelike, Web3Storage } from "web3.storage";
+import { Filelike, Web3File, Web3Storage } from "web3.storage";
 
 class Nft {
   client: Web3Storage;
@@ -23,6 +23,31 @@ class Nft {
       name: file.name,
     });
     return rootCid;
+  }
+
+  async getListOfNfts() {
+    const uploads = [];
+    for await (const item of this.client.list()) {
+      uploads.push(item);
+    }
+    return uploads;
+  }
+  /**
+   * @return file cid, not a files catalog
+   */
+  async getNftByCID(cid: string) {
+    const response = await this.client.get(cid);
+    if (!response || !response.ok) {
+      throw new Error("failed to get nft");
+    }
+
+    let result: Web3File | undefined;
+    const files = await response.files();
+    for (const file of files) {
+      result = file;
+    }
+
+    return result;
   }
 }
 
