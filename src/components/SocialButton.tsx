@@ -1,13 +1,8 @@
 import Image from "next/image";
-import redditIcon from "../../public/social-icons/reddit.svg";
-import twitterIcon from "../../public/social-icons/twitter.svg";
-import discordIcon from "../../public/social-icons/discord.svg";
-import instagramIcon from "../../public/social-icons/instagram.svg";
-
-interface SocialButtonProps {
-  icon: "twitter" | "reddit" | "discord" | "instagram";
-  className?: string;
-}
+import redditIcon from "public/social-icons/reddit.svg";
+import twitterIcon from "public/social-icons/twitter.svg";
+import discordIcon from "public/social-icons/discord.svg";
+import instagramIcon from "public/social-icons/instagram.svg";
 
 const icons = {
   twitter: twitterIcon,
@@ -15,6 +10,12 @@ const icons = {
   discord: discordIcon,
   instagram: instagramIcon,
 };
+
+interface SocialButtonProps {
+  icon: keyof typeof icons;
+  className?: string;
+}
+
 export function SocialButton({ icon, className }: SocialButtonProps) {
   return (
     <button className={`hover:bg-gray-900 rounded-full p-2 ${className}`}>
