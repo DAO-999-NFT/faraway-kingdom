@@ -13,7 +13,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body className="root-background overflow-scroll">
+      <body className="root-background overflow-hidden">
         <Main />
         <NextScript />
       </body>

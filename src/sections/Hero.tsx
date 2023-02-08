@@ -10,12 +10,14 @@ import Link from "next/link";
 import { SliderWithRotation } from "src/components/SliderWithRotation";
 import { MainSliderImages } from "public/main-slider-images";
 import useWindowDimensions from "src/hooks/useWindowDimensions";
+import { MAX_PX_FOR_SHOW_NAVBAR } from "src/constants/common";
 
 type pathsType = "home" | "createNft" | "sellAssets" | "myAssets";
 
 export function Hero() {
   const [selected, setSelected] = useState<pathsType>("home");
   const { width } = useWindowDimensions();
+  const isnNavBlockVisible = width > MAX_PX_FOR_SHOW_NAVBAR;
 
   const textColor = (name: pathsType) => {
     return selected === name
@@ -37,13 +39,13 @@ export function Hero() {
       >
         <div className="flex justify-center flex-col relative z-10">
           <motion.div
-            variants={textFade(1.2)}
-            className="flex flex-row justify-center items-center"
+            variants={textFade(0.3)}
+            className="flex flex-row justify-center"
           >
             <Image
               src={farawayKingdomLogo}
               alt="faraway_kingdom_logo"
-              className="w-250 h-83"
+              className="w-250 h-83 -mt-8"
               width={864}
               height={288}
             />
@@ -120,50 +122,52 @@ export function Hero() {
           <SocialButton className="mx-2" icon="instagram" />
         </motion.div>
       )}
-      <div
-        style={{ fontFamily: "Tuffy" }}
-        className="flex justify-center flex-row text-lg md:text-2xl text-white mt-4"
-      >
-        <Link href="/">
+      {isnNavBlockVisible && (
+        <div
+          style={{ fontFamily: "Tuffy" }}
+          className="flex justify-center flex-row text-lg md:text-2xl text-white mt-4"
+        >
+          <Link href="/">
+            <motion.div
+              className="cursor-pointer"
+              onClick={onPressNav("home")}
+              animate={textColor("home")}
+              transition={{ duration: 0.5 }}
+            >
+              Home
+            </motion.div>
+          </Link>
+          &nbsp;|&nbsp;
           <motion.div
             className="cursor-pointer"
-            onClick={onPressNav("home")}
-            animate={textColor("home")}
+            onClick={onPressNav("sellAssets")}
+            animate={textColor("sellAssets")}
             transition={{ duration: 0.5 }}
           >
-            Home
+            Sell assets
           </motion.div>
-        </Link>
-        &nbsp;|&nbsp;
-        <motion.div
-          className="cursor-pointer"
-          onClick={onPressNav("sellAssets")}
-          animate={textColor("sellAssets")}
-          transition={{ duration: 0.5 }}
-        >
-          Sell assets
-        </motion.div>
-        &nbsp;|&nbsp;
-        <motion.div
-          className="cursor-pointer"
-          onClick={onPressNav("myAssets")}
-          animate={textColor("myAssets")}
-          transition={{ duration: 0.5 }}
-        >
-          My Assets
-        </motion.div>
-        &nbsp;|&nbsp;
-        <Link href="/create-nft">
+          &nbsp;|&nbsp;
           <motion.div
             className="cursor-pointer"
-            onClick={onPressNav("createNft")}
-            animate={textColor("createNft")}
+            onClick={onPressNav("myAssets")}
+            animate={textColor("myAssets")}
             transition={{ duration: 0.5 }}
           >
-            Creator Dashboard
+            My Assets
           </motion.div>
-        </Link>
-      </div>
+          &nbsp;|&nbsp;
+          <Link href="/create-nft">
+            <motion.div
+              className="cursor-pointer"
+              onClick={onPressNav("createNft")}
+              animate={textColor("createNft")}
+              transition={{ duration: 0.5 }}
+            >
+              Creator Dashboard
+            </motion.div>
+          </Link>
+        </div>
+      )}
       <SliderWithRotation data={MainSliderImages} />
     </section>
   );

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import styles from "../styles";
-import { insights } from "../constants";
+import { insights } from "../constants/ContentForExploreCards";
 import { InsightCard, TitleText, TypingText } from "src/components";
 
 export const Insights = () => (

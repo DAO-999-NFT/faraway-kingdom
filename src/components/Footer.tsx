@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { socials } from "src/constants";
+import { socials } from "src/constants/ContentForExploreCards";
 
 import styles from "src/styles";
 import { footerVariants } from "src/utils/motion";

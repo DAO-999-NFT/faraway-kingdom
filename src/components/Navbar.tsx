@@ -1,39 +1,46 @@
-import { motion, useCycle } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 import styles from "src/styles";
 import searchIcon from "public/common-icons/search.svg";
-import menuIcon from "public/common-icons/menu.svg";
 import { MenuToggler } from "./MenuToggler";
+import useWindowDimensions from "src/hooks/useWindowDimensions";
+import { MAX_PX_FOR_SHOW_NAVBAR } from "src/constants/common";
+import { RightDrawer } from "./RightDrawer";
 
 export function Navbar() {
-  const [isOpen, toggleOpen] = useCycle(false, true);
+  const { width, height } = useWindowDimensions();
+
+  const navBarVisible = width <= MAX_PX_FOR_SHOW_NAVBAR;
 
   return (
-    <motion.nav
-      className={`${styles.xPaddings} pt-8 pb relative`}
-      initial={false}
-      animate={isOpen ? "open" : "closed"}
-    >
-      <div className="absolute w-[50%] inset-0" />
-      <div
-        className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
+    <>
+      <motion.nav
+        className={`py-4 absolute w-[100vw] z-50 top-0 px-6 bg-[#2a052e] border-b-[1px] border-gray-500`}
+        initial={false}
+        custom={height}
       >
-        <Image
-          src={searchIcon}
-          alt="search"
-          width={40}
-          height={40}
-          className="w-[24px] h-[24px] object-contain"
-        />
-        <h2
-          style={{ fontFamily: "Abel" }}
-          className="font-extrabold font-sans text-[24px] leading-[30.24px] text-white"
+        <div
+          className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
         >
-          METAVERSUS
-        </h2>
-        <MenuToggler onToggle={toggleOpen} />
-      </div>
-    </motion.nav>
+          <Image
+            src={searchIcon}
+            alt="search"
+            width={40}
+            height={40}
+            className="w-[24px] h-[24px] object-contain"
+          />
+          <h2
+            style={{ fontFamily: "Abel" }}
+            className="font-extrabold font-sans text-[24px] leading-[30.24px] text-white"
+          >
+            METAVERSUS
+          </h2>
+
+          {navBarVisible ? <MenuToggler /> : <div className="w-5" />}
+        </div>
+        <RightDrawer />
+      </motion.nav>
+    </>
   );
 }

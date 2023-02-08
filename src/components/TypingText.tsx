@@ -3,18 +3,20 @@ import { textContainer, textVariant2 } from "src/utils/motion";
 
 interface TypingTextProps {
   title: string;
-  textStyles?: string;
+  className?: string;
 }
 
-export const TypingText = ({ title, textStyles }: TypingTextProps) => (
-  <motion.p
+export const TypingText = ({ title, className }: TypingTextProps) => (
+  <motion.span
     variants={textContainer}
-    className={`font-normal text-[14px] text-secondary-white ${textStyles}`}
+    style={{ wordWrap: "break-word", hyphens: "auto" }}
+    className={`font-normal flex-row text-[14px] text-secondary-white ${className}`}
   >
-    {Array.from(title).map((letter, index) => (
-      <motion.span variants={textVariant2} key={index}>
+    {title.split(" ").map((letter, index) => (
+      <motion.span className="inline-block" variants={textVariant2} key={index}>
         {letter === " " ? "\u00A0" : letter}
+        {"\u00A0"}
       </motion.span>
     ))}
-  </motion.p>
+  </motion.span>
 );
