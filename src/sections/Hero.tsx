@@ -9,11 +9,13 @@ import { useState } from "react";
 import Link from "next/link";
 import { SliderWithRotation } from "src/components/SliderWithRotation";
 import { MainSliderImages } from "public/main-slider-images";
+import useWindowDimensions from "src/hooks/useWindowDimensions";
 
 type pathsType = "home" | "createNft" | "sellAssets" | "myAssets";
 
 export function Hero() {
   const [selected, setSelected] = useState<pathsType>("home");
+  const { width } = useWindowDimensions();
 
   const textColor = (name: pathsType) => {
     return selected === name
@@ -46,23 +48,25 @@ export function Hero() {
               height={288}
             />
           </motion.div>
-          <motion.div
-            className="flex flex-col absolute align-top top-0 right-10"
-            initial="hidden"
-            whileInView="show"
-            variants={fadeIn({
-              direction: "right",
-              transition: {
-                type: "tween",
-                delay: 0.2,
-              },
-            })}
-          >
-            <SocialButton className="my-2" icon="reddit" />
-            <SocialButton className="my-2" icon="discord" />
-            <SocialButton className="my-2" icon="twitter" />
-            <SocialButton className="my-2" icon="instagram" />
-          </motion.div>
+          {width > 935 && (
+            <motion.div
+              className="flex flex-col absolute align-top top-0 right-10"
+              initial="hidden"
+              whileInView="show"
+              variants={fadeIn({
+                direction: "right",
+                transition: {
+                  type: "tween",
+                  delay: 0.2,
+                },
+              })}
+            >
+              <SocialButton className="my-2" icon="reddit" />
+              <SocialButton className="my-2" icon="discord" />
+              <SocialButton className="my-2" icon="twitter" />
+              <SocialButton className="my-2" icon="instagram" />
+            </motion.div>
+          )}
         </div>
         {/* <motion.div
           variants={slideIn({
@@ -97,9 +101,28 @@ export function Hero() {
           </a>
         </motion.div> */}
       </motion.div>
+      {width <= 935 && (
+        <motion.div
+          className="flex self-end justify-end flex-row mr-6"
+          initial="hidden"
+          whileInView="show"
+          variants={fadeIn({
+            direction: "left",
+            transition: {
+              type: "tween",
+              delay: 0.2,
+            },
+          })}
+        >
+          <SocialButton className="mx-2" icon="reddit" />
+          <SocialButton className="mx-2" icon="discord" />
+          <SocialButton className="mx-2" icon="twitter" />
+          <SocialButton className="mx-2" icon="instagram" />
+        </motion.div>
+      )}
       <div
         style={{ fontFamily: "Tuffy" }}
-        className="flex justify-center flex-row text-3xl text-white"
+        className="flex justify-center flex-row text-lg md:text-2xl text-white mt-4"
       >
         <Link href="/">
           <motion.div
