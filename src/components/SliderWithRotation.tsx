@@ -41,7 +41,7 @@ export function SliderWithRotation({ data }: SliderWithRotationProps) {
         return (
           <SwiperSlide key={index} className="h-auto">
             <Image
-              className="w-60 h-80 rounded-xl overflow-hidden"
+              className="w-60 h-50 md:h-80 rounded-xl overflow-hidden"
               height={500}
               width={400}
               src={item}
@@ -75,7 +75,7 @@ const NavButton = ({ isLeft }: NavButtonProps) => {
         }
       >
         <Image
-          className="w-3 h-3"
+          className="w-4 h-4"
           width={50}
           height={50}
           src={leftIcon}
@@ -92,7 +92,7 @@ const NavButton = ({ isLeft }: NavButtonProps) => {
         }
       >
         <Image
-          className="w-3 h-3"
+          className="w-4 h-4"
           width={50}
           height={50}
           src={rightIcon}
