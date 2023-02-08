@@ -1,16 +1,32 @@
-"use client";
-
 import { motion } from "framer-motion";
 
 import styles from "src/styles";
-import { fadeIn, slideIn, textFade } from "src/utils/motion";
+import { fadeIn, textFade } from "src/utils/motion";
 import { SocialButton } from "src/components/SocialButton";
 import farawayKingdomLogo from "public/farawayKingdomLogo.svg";
 import Image from "next/image";
+import { useState } from "react";
+import Link from "next/link";
+import { SliderWithRotation } from "src/components/SliderWithRotation";
+import { MainSliderImages } from "public/main-slider-images";
+
+type pathsType = "home" | "createNft" | "sellAssets" | "myAssets";
 
 export function Hero() {
+  const [selected, setSelected] = useState<pathsType>("home");
+
+  const textColor = (name: pathsType) => {
+    return selected === name
+      ? { color: "rgb(224, 92, 255)" }
+      : { color: "rgb(255, 255, 255)" };
+  };
+
+  const onPressNav = (path: pathsType) => () => {
+    setSelected(path);
+  };
+
   return (
-    <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
+    <section>
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -25,13 +41,13 @@ export function Hero() {
             <Image
               src={farawayKingdomLogo}
               alt="faraway_kingdom_logo"
-              className="w-196 h-56"
-              width={844}
-              height={232}
+              className="w-250 h-83"
+              width={864}
+              height={288}
             />
           </motion.div>
           <motion.div
-            className="flex flex-col absolute right-10"
+            className="flex flex-col absolute align-top top-0 right-10"
             initial="hidden"
             whileInView="show"
             variants={fadeIn({
@@ -42,14 +58,13 @@ export function Hero() {
               },
             })}
           >
-            <SocialButton className="my-4" icon="reddit" />
-            <SocialButton className="my-4" icon="discord" />
-            <SocialButton className="my-4" icon="twitter" />
-            <SocialButton className="my-4" icon="instagram" />
+            <SocialButton className="my-2" icon="reddit" />
+            <SocialButton className="my-2" icon="discord" />
+            <SocialButton className="my-2" icon="twitter" />
+            <SocialButton className="my-2" icon="instagram" />
           </motion.div>
         </div>
-
-        <motion.div
+        {/* <motion.div
           variants={slideIn({
             direction: "right",
             transition: {
@@ -57,7 +72,7 @@ export function Hero() {
               delay: 0.2,
             },
           })}
-          className="relative w-full mt-24"
+          className="relative w-full mt-24 sm:pl-16 pl-6"
         >
           <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
 
@@ -80,8 +95,53 @@ export function Hero() {
               />
             </div>
           </a>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
+      <div
+        style={{ fontFamily: "Tuffy" }}
+        className="flex justify-center flex-row text-3xl text-white"
+      >
+        <Link href="/">
+          <motion.div
+            className="cursor-pointer"
+            onClick={onPressNav("home")}
+            animate={textColor("home")}
+            transition={{ duration: 0.5 }}
+          >
+            Home
+          </motion.div>
+        </Link>
+        &nbsp;|&nbsp;
+        <motion.div
+          className="cursor-pointer"
+          onClick={onPressNav("sellAssets")}
+          animate={textColor("sellAssets")}
+          transition={{ duration: 0.5 }}
+        >
+          Sell assets
+        </motion.div>
+        &nbsp;|&nbsp;
+        <motion.div
+          className="cursor-pointer"
+          onClick={onPressNav("myAssets")}
+          animate={textColor("myAssets")}
+          transition={{ duration: 0.5 }}
+        >
+          My Assets
+        </motion.div>
+        &nbsp;|&nbsp;
+        <Link href="/create-nft">
+          <motion.div
+            className="cursor-pointer"
+            onClick={onPressNav("createNft")}
+            animate={textColor("createNft")}
+            transition={{ duration: 0.5 }}
+          >
+            Creator Dashboard
+          </motion.div>
+        </Link>
+      </div>
+      <SliderWithRotation data={MainSliderImages} />
     </section>
   );
 }
