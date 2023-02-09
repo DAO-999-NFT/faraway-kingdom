@@ -6,7 +6,7 @@ interface ProvidedValue {
   isOpen: boolean;
 }
 
-export const ThemeContext = createContext<ProvidedValue>({
+export const RightDrawerContext = createContext<ProvidedValue>({
   isOpen: false,
   setOpen: () => {},
   setNotOpen: () => {},
@@ -20,13 +20,13 @@ export function RightDrawerProvider({children}: RightDrawerProviderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <ThemeContext.Provider
+    <RightDrawerContext.Provider
       value={{
         isOpen,
         setOpen: () => setIsOpen(true),
         setNotOpen: () => setIsOpen(false),
       }}>
       {children}
-    </ThemeContext.Provider>
+    </RightDrawerContext.Provider>
   );
 }

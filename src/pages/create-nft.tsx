@@ -8,7 +8,7 @@ import {Upload, Web3File} from 'web3.storage';
 import {nft} from 'src/services/nft';
 import {FileWithPreview, onDragType} from 'src/types';
 
-export default function Home() {
+export default function CreateNftPage() {
   const [image, setImage] = useState<FileWithPreview>();
   const [nfts, setNfts] = useState<Upload[]>([]);
   const [oneNft, setOneNft] = useState<Web3File>();

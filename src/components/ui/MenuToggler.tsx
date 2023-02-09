@@ -1,17 +1,18 @@
-import {useContext} from 'react';
-
 import {SVGMotionProps, motion} from 'framer-motion';
-
-import {ThemeContext} from 'src/context';
 
 interface MenuTogglerProps {
   color?: string;
+  onPress: () => void;
+  isOpen: boolean;
 }
 
-export function MenuToggler({color = '#fff'}: MenuTogglerProps) {
-  const {isOpen, setNotOpen, setOpen} = useContext(ThemeContext);
+export function MenuToggler({
+  color = '#fff',
+  onPress,
+  isOpen,
+}: MenuTogglerProps) {
   return (
-    <button onClick={isOpen ? setNotOpen : setOpen}>
+    <motion.button animate={isOpen ? 'open' : 'closed'} onClick={onPress}>
       <svg width="23" height="23" viewBox="0 0 23 23">
         <Path
           variants={{
@@ -37,16 +38,14 @@ export function MenuToggler({color = '#fff'}: MenuTogglerProps) {
           stroke={color}
         />
       </svg>
-    </button>
+    </motion.button>
   );
 }
 
 function Path(props: SVGMotionProps<SVGPathElement>) {
-  const {isOpen} = useContext(ThemeContext);
   return (
     <motion.path
       fill="transparent"
-      animate={isOpen ? 'open' : 'closed'}
       strokeWidth="3"
       strokeLinecap="round"
       {...props}

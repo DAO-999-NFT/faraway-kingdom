@@ -9,11 +9,11 @@ import useWindowDimensions from 'src/hooks/useWindowDimensions';
 import leftIcon from 'public/common-icons/chevron-left.svg';
 import rightIcon from 'public/common-icons/chevron-right.svg';
 
-interface SliderWithRotationProps {
+interface MainSliderProps {
   data: string[] | StaticImageData[];
 }
 
-export function SliderWithRotation({data}: SliderWithRotationProps) {
+export function MainSlider({data}: MainSliderProps) {
   const {width} = useWindowDimensions();
 
   return (

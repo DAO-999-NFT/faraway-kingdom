@@ -30,6 +30,11 @@
                 "pattern": "src/**",
                 "group": "external",
                 "position": "after"
+              },
+              {
+                "pattern": "public/**",
+                "group": "external",
+                "position": "after"
               }
             ],
             "pathGroupsExcludedImportTypes": ["react"],

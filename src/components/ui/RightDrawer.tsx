@@ -1,11 +1,10 @@
-import {useContext} from 'react';
-
 import {Variants, motion} from 'framer-motion';
 
-import {ThemeContext} from 'src/context';
+interface RightDrawerProps {
+  isOpen: boolean;
+}
 
-export function RightDrawer() {
-  const {isOpen} = useContext(ThemeContext);
+export function RightDrawer({isOpen}: RightDrawerProps) {
   const animation = isOpen ? 'open' : 'closed';
 
   return (

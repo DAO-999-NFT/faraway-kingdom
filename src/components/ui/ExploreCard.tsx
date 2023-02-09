@@ -1,15 +1,16 @@
 import {motion} from 'framer-motion';
-import Image, {StaticImageData} from 'next/image';
+import Image from 'next/image';
 
+import {
+  exploreContentsItem,
+  exploreContentsItemNames,
+} from 'src/constants/ContentForExploreCards';
 import {fadeIn} from 'src/utils/motion';
 
-interface ExploreCardProps {
-  id: string;
-  img: string | StaticImageData;
-  content: JSX.Element;
+interface ExploreCardProps extends exploreContentsItem {
   index: number;
-  active: string;
-  handleClick: (id: string) => void;
+  active: exploreContentsItemNames;
+  handleClick: (id: exploreContentsItemNames) => void;
 }
 
 export function ExploreCard({

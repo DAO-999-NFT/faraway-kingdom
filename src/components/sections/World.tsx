@@ -1,6 +1,6 @@
 import {motion} from 'framer-motion';
 
-import {TitleText, TypingText} from 'src/components';
+import {TitleText, TypingText} from 'src/components/ui';
 import styles from 'src/styles';
 import {fadeIn} from 'src/utils/motion';
 

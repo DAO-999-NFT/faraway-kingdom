@@ -1,10 +1,25 @@
+import {StaticImageData} from 'next/image';
+
 import contentImage1 from 'public/explore-images/contentImage1.png';
 import contentImage2 from 'public/explore-images/contentImage2.png';
 import contentImage3 from 'public/explore-images/contentImage3.png';
 import contentImage4 from 'public/explore-images/contentImage4.png';
 import contentImage5 from 'public/explore-images/contentImage5.png';
 
-export const exploreWorlds = [
+export type exploreContentsItemNames =
+  | 'content-1'
+  | 'content-2'
+  | 'content-3'
+  | 'content-4'
+  | 'content-5';
+
+export interface exploreContentsItem {
+  id: exploreContentsItemNames;
+  img: string | StaticImageData;
+  content: JSX.Element;
+}
+
+export const exploreContents: exploreContentsItem[] = [
   {
     id: 'content-1',
     img: contentImage1,

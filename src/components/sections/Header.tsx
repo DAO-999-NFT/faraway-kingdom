@@ -1,17 +1,19 @@
+import {useContext} from 'react';
+
 import {motion} from 'framer-motion';
 import Image from 'next/image';
 
+import {MenuToggler, RightDrawer} from 'src/components/ui';
 import {MAX_PX_FOR_SHOW_NAVBAR} from 'src/constants/common';
+import {RightDrawerContext} from 'src/context';
 import useWindowDimensions from 'src/hooks/useWindowDimensions';
 import styles from 'src/styles';
 
 import searchIcon from 'public/common-icons/search.svg';
 
-import {MenuToggler} from './MenuToggler';
-import {RightDrawer} from './RightDrawer';
-
-export function Navbar() {
+export function Header() {
   const {width, height} = useWindowDimensions();
+  const {isOpen, setNotOpen, setOpen} = useContext(RightDrawerContext);
 
   const navBarVisible = width <= MAX_PX_FOR_SHOW_NAVBAR;
 
@@ -34,9 +36,16 @@ export function Navbar() {
             METAVERSUS
           </h2>
 
-          {navBarVisible ? <MenuToggler /> : <div className="w-5" />}
+          {navBarVisible ? (
+            <MenuToggler
+              isOpen={isOpen}
+              onPress={isOpen ? setNotOpen : setOpen}
+            />
+          ) : (
+            <div className="w-5" />
+          )}
         </div>
-        <RightDrawer />
+        <RightDrawer isOpen={isOpen} />
       </motion.nav>
     </>
   );
