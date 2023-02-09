@@ -15,7 +15,7 @@ export function TypingText({title, className}: TypingTextProps) {
       className={`flex-row text-[14px] text-secondary-white ${className}`}>
       {title.split(' ').map((letter, index) => (
         <motion.span
-          className="inline-block font-tuffy"
+          className="inline-block font-neucha"
           variants={textVariant2}
           key={index}>
           {letter === ' ' ? '\u00A0' : letter}

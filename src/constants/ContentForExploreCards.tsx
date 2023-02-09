@@ -27,10 +27,10 @@ export const exploreContents: exploreContentsItem[] = [
       <>
         Коллекция стала праздником электронной музыки, и было сказано, что
         обладание NFT принесет коллекционеру{' '}
-        <span className="font-extrabold text-white">удачу</span>,{' '}
-        <span className="font-extrabold text-white">землю</span> в метавселенной
-        999 и <span className="font-extrabold text-white">токен</span>{' '}
-        управления в Царстве Тридевятом DAO в придачу.
+        <span className="font-neucha text-white">удачу</span>,{' '}
+        <span className="font-neucha text-white">землю</span> в метавселенной
+        999 и <span className="font-neucha text-white">токен</span> управления в
+        Царстве Тридевятом DAO в придачу.
       </>
     ),
   },
@@ -40,12 +40,12 @@ export const exploreContents: exploreContentsItem[] = [
     content: (
       <>
         И вот, было объявлено, что{' '}
-        <span className="font-extrabold text-white">8 марта</span> в волшебном
+        <span className="font-neucha text-white">8 марта</span> в волшебном
         королевстве, в{' '}
-        <span className="font-extrabold text-white">клубе Культ</span>, начнется{' '}
-        <span className="font-extrabold text-white">официальный аукцион</span>{' '}
+        <span className="font-neucha text-white">клубе Культ</span>, начнется{' '}
+        <span className="font-neucha text-white">официальный аукцион</span>{' '}
         коллекции, куда мы приглашаем вас присоединиться к нам на тропическом
-        острове <span className="font-extrabold text-white">Панган</span> и
+        острове <span className="font-neucha text-white">Панган</span> и
         погрузиться в это с головой за белым кроликом домой.
       </>
     ),
@@ -57,7 +57,7 @@ export const exploreContents: exploreContentsItem[] = [
       <>
         Итак, было сказано, что любой, кому посчастливится посетить это
         мероприятие, получит{' '}
-        <span className="font-extrabold text-white">
+        <span className="font-neucha text-white">
           шанс стать первым обладателем произведения цифрового искусства
         </span>{' '}
         и ощутить магию электронной музыки.
@@ -70,9 +70,9 @@ export const exploreContents: exploreContentsItem[] = [
     content: (
       <>
         Добро пожаловать в заколдованный мир метавселенной -{' '}
-        <span className="font-extrabold text-white">Тридевятое Царство</span>,
-        где каждой частью метавселенной правит{' '}
-        <span className="font-extrabold text-white">
+        <span className="font-neucha text-white">Тридевятое Царство</span>, где
+        каждой частью метавселенной правит{' '}
+        <span className="font-neucha text-white">
           легендарная королева, изображенная на NFT.
         </span>
       </>

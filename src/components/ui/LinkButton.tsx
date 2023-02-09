@@ -30,7 +30,7 @@ export function LinkButton({
   return (
     <Link href={`/${name}`}>
       <motion.div
-        className={`cursor-pointer font-tuffy ${className}`}
+        className={`cursor-pointer font-neucha ${className}`}
         onClick={handleClick}
         animate={color}
         transition={{duration: 0.2}}>

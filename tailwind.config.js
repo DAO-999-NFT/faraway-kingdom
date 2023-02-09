@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         abel: ['var(--font-abel)', ...fontFamily.sans],
-        tuffy: ['var(--font-tuffy)'],
+        neucha: ['var(--font-neucha)'],
       },
       colors: {
         'primary-black': '#1A232E',
