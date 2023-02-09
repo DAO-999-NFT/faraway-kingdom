@@ -42,6 +42,7 @@ export function MainSlider({data}: MainSliderProps) {
         return (
           <SwiperSlide key={index} className="h-auto">
             <Image
+              priority
               className="w-60 h-50 md:h-80 rounded-xl overflow-hidden"
               height={500}
               width={400}

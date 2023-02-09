@@ -22,10 +22,12 @@ export function RightDrawer({isOpen}: RightDrawerProps) {
       <motion.div
         animate={animation}
         variants={shadow}
+        initial={'closed'}
         className="absolute z-40 right-0 left-0 translate-y-4 w-[100%] h-[100vh] bg-[rgb(0,0,0,0.15)]"
       />
       <motion.div
         animate={animation}
+        initial={'closed'}
         className="absolute z-50 right-0 h-[100vh] translate-y-4 bg-[#2a052e]" //bg-[#2a052e]
         variants={sidebar}>
         {MAIN_NAV_PATHS.map(({text, name}) => (
