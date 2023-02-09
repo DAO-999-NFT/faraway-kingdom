@@ -1,26 +1,28 @@
-import Head from "next/head";
-import { useDropzone } from "react-dropzone";
-import { useCallback, useState } from "react";
-import { FileWithPreview, onDragType } from "src/types";
-import Image from "next/image";
-import { nft } from "src/services/nft";
-import { Upload, Web3File } from "web3.storage";
+import {useCallback, useState} from 'react';
+
+import Head from 'next/head';
+import Image from 'next/image';
+import {useDropzone} from 'react-dropzone';
+import {Upload, Web3File} from 'web3.storage';
+
+import {nft} from 'src/services/nft';
+import {FileWithPreview, onDragType} from 'src/types';
 
 export default function Home() {
   const [image, setImage] = useState<FileWithPreview>();
   const [nfts, setNfts] = useState<Upload[]>([]);
   const [oneNft, setOneNft] = useState<Web3File>();
 
-  const onDrop = useCallback<onDragType>((acceptedFiles) => {
-    if (acceptedFiles[0].type.startsWith("image/")) {
+  const onDrop = useCallback<onDragType>(acceptedFiles => {
+    if (acceptedFiles[0].type.startsWith('image/')) {
       setImage(
         Object.assign(acceptedFiles[0], {
           preview: URL.createObjectURL(acceptedFiles[0]),
-        })
+        }),
       );
     }
   }, []);
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
+  const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop});
 
   const onSubmitNft = () => {
     image && nft.createNft(image);
@@ -30,7 +32,7 @@ export default function Home() {
   };
   const getOneNft = async () => {
     const result = await nft.getNftByCID(
-      "bafybeicdpp3pnef37at456xrxlqa64whkgreipvo6cl2aoz63nolme5zji"
+      'bafybeicdpp3pnef37at456xrxlqa64whkgreipvo6cl2aoz63nolme5zji',
     );
     setOneNft(result);
   };
@@ -41,10 +43,10 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <main>
-        <input {...getInputProps()} style={{ height: 50, width: 400 }} />
+        <input {...getInputProps()} style={{height: 50, width: 400}} />
         <div
           {...getRootProps()}
-          style={{ height: 200, width: 200, backgroundColor: "red" }}
+          style={{height: 200, width: 200, backgroundColor: 'red'}}
         />
         {isDragActive ? (
           <p>Drop the files here ...</p>
@@ -56,8 +58,7 @@ export default function Home() {
             <button
               type="button"
               className="inline-flex w-full justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
-              onClick={onSubmitNft}
-            >
+              onClick={onSubmitNft}>
               Create nft
             </button>
             <Image width={150} height={150} alt="none" src={image.preview} />
@@ -66,8 +67,7 @@ export default function Home() {
         <button
           type="button"
           className="inline-flex w-full justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
-          onClick={getOneNft}
-        >
+          onClick={getOneNft}>
           Fetch one nft
         </button>
         {oneNft && (
@@ -88,12 +88,11 @@ export default function Home() {
         <button
           type="button"
           className="inline-flex w-full justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
-          onClick={fetchNfts}
-        >
+          onClick={fetchNfts}>
           Fetch all nfts
         </button>
         <ul className="divide-y divide-gray-200">
-          {nfts.map((nft) => (
+          {nfts.map(nft => (
             <li key={nft.cid} className="py-4 flex">
               <Image
                 height={100}

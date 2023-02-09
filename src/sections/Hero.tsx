@@ -1,28 +1,30 @@
-import { motion } from "framer-motion";
+import {useState} from 'react';
 
-import styles from "src/styles";
-import { fadeIn, textFade } from "src/utils/motion";
-import { SocialButton } from "src/components/SocialButton";
-import farawayKingdomLogo from "public/farawayKingdomLogo.svg";
-import Image from "next/image";
-import { useState } from "react";
-import Link from "next/link";
-import { SliderWithRotation } from "src/components/SliderWithRotation";
-import { MainSliderImages } from "public/main-slider-images";
-import useWindowDimensions from "src/hooks/useWindowDimensions";
-import { MAX_PX_FOR_SHOW_NAVBAR } from "src/constants/common";
+import {motion} from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
 
-type pathsType = "home" | "createNft" | "sellAssets" | "myAssets";
+import {SliderWithRotation} from 'src/components/SliderWithRotation';
+import {SocialButton} from 'src/components/SocialButton';
+import {MAX_PX_FOR_SHOW_NAVBAR} from 'src/constants/common';
+import useWindowDimensions from 'src/hooks/useWindowDimensions';
+import styles from 'src/styles';
+import {fadeIn, textFade} from 'src/utils/motion';
+
+import farawayKingdomLogo from 'public/farawayKingdomLogo.svg';
+import {MainSliderImages} from 'public/main-slider-images';
+
+type pathsType = 'home' | 'createNft' | 'sellAssets' | 'myAssets';
 
 export function Hero() {
-  const [selected, setSelected] = useState<pathsType>("home");
-  const { width } = useWindowDimensions();
+  const [selected, setSelected] = useState<pathsType>('home');
+  const {width} = useWindowDimensions();
   const isnNavBlockVisible = width > MAX_PX_FOR_SHOW_NAVBAR;
 
   const textColor = (name: pathsType) => {
     return selected === name
-      ? { color: "rgb(224, 92, 255)" }
-      : { color: "rgb(255, 255, 255)" };
+      ? {color: 'rgb(224, 92, 255)'}
+      : {color: 'rgb(255, 255, 255)'};
   };
 
   const onPressNav = (path: pathsType) => () => {
@@ -34,14 +36,12 @@ export function Hero() {
       <motion.div
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}
-      >
+        viewport={{once: false, amount: 0.25}}
+        className={`${styles.innerWidth} mx-auto flex flex-col`}>
         <div className="flex justify-center flex-col relative z-10">
           <motion.div
             variants={textFade(0.3)}
-            className="flex flex-row justify-center"
-          >
+            className="flex flex-row justify-center">
             <Image
               src={farawayKingdomLogo}
               alt="faraway_kingdom_logo"
@@ -56,13 +56,12 @@ export function Hero() {
               initial="hidden"
               whileInView="show"
               variants={fadeIn({
-                direction: "right",
+                direction: 'right',
                 transition: {
-                  type: "tween",
+                  type: 'tween',
                   delay: 0.2,
                 },
-              })}
-            >
+              })}>
               <SocialButton className="my-2" icon="reddit" />
               <SocialButton className="my-2" icon="discord" />
               <SocialButton className="my-2" icon="twitter" />
@@ -109,13 +108,12 @@ export function Hero() {
           initial="hidden"
           whileInView="show"
           variants={fadeIn({
-            direction: "left",
+            direction: 'left',
             transition: {
-              type: "tween",
+              type: 'tween',
               delay: 0.2,
             },
-          })}
-        >
+          })}>
           <SocialButton className="mx-2" icon="reddit" />
           <SocialButton className="mx-2" icon="discord" />
           <SocialButton className="mx-2" icon="twitter" />
@@ -127,39 +125,35 @@ export function Hero() {
           <Link href="/">
             <motion.div
               className="cursor-pointer font-tuffy"
-              onClick={onPressNav("home")}
-              animate={textColor("home")}
-              transition={{ duration: 0.5 }}
-            >
+              onClick={onPressNav('home')}
+              animate={textColor('home')}
+              transition={{duration: 0.5}}>
               Home
             </motion.div>
           </Link>
           &nbsp;|&nbsp;
           <motion.div
             className="cursor-pointer font-tuffy"
-            onClick={onPressNav("sellAssets")}
-            animate={textColor("sellAssets")}
-            transition={{ duration: 0.5 }}
-          >
+            onClick={onPressNav('sellAssets')}
+            animate={textColor('sellAssets')}
+            transition={{duration: 0.5}}>
             Sell assets
           </motion.div>
           &nbsp;|&nbsp;
           <motion.div
             className="cursor-pointer font-tuffy"
-            onClick={onPressNav("myAssets")}
-            animate={textColor("myAssets")}
-            transition={{ duration: 0.5 }}
-          >
+            onClick={onPressNav('myAssets')}
+            animate={textColor('myAssets')}
+            transition={{duration: 0.5}}>
             My Assets
           </motion.div>
           &nbsp;|&nbsp;
           <Link href="/create-nft">
             <motion.div
               className="cursor-pointer font-tuffy"
-              onClick={onPressNav("createNft")}
-              animate={textColor("createNft")}
-              transition={{ duration: 0.5 }}
-            >
+              onClick={onPressNav('createNft')}
+              animate={textColor('createNft')}
+              transition={{duration: 0.5}}>
               Creator Dashboard
             </motion.div>
           </Link>

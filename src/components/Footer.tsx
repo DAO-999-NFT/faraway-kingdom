@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
+import {motion} from 'framer-motion';
 
-import styles from "src/styles";
-import { footerVariants } from "src/utils/motion";
+import styles from 'src/styles';
+import {footerVariants} from 'src/utils/motion';
 
 export function Footer() {
   return (
@@ -9,8 +9,7 @@ export function Footer() {
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
-      className={`${styles.xPaddings} py-8 relative`}
-    >
+      className={`${styles.xPaddings} py-8 relative`}>
       <div className="footer-gradient" />
       <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
         <div className="flex items-center justify-between flex-wrap gap-5">
@@ -19,8 +18,7 @@ export function Footer() {
           </h4>
           <button
             type="button"
-            className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]"
-          >
+            className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
             <img
               src="/headset.svg"
               alt="headset"

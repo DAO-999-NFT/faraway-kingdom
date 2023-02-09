@@ -1,10 +1,12 @@
-import { motion, Variants } from "framer-motion";
-import { useContext } from "react";
-import { ThemeContext } from "src/context";
+import {useContext} from 'react';
+
+import {Variants, motion} from 'framer-motion';
+
+import {ThemeContext} from 'src/context';
 
 export function RightDrawer() {
-  const { isOpen } = useContext(ThemeContext);
-  const animation = isOpen ? "open" : "closed";
+  const {isOpen} = useContext(ThemeContext);
+  const animation = isOpen ? 'open' : 'closed';
 
   return (
     <motion.div
@@ -17,9 +19,9 @@ export function RightDrawer() {
 
 const sidebar: Variants = {
   open: () => ({
-    width: "70%",
+    width: '70%',
     transition: {
-      type: "spring",
+      type: 'spring',
       stiffness: 100,
       restDelta: 200,
       mass: 0.5,
@@ -29,7 +31,7 @@ const sidebar: Variants = {
     width: 0,
     transition: {
       delay: 0.5,
-      type: "spring",
+      type: 'spring',
       stiffness: 400,
       damping: 40,
     },

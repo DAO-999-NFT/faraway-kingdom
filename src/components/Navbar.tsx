@@ -1,15 +1,17 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
+import {motion} from 'framer-motion';
+import Image from 'next/image';
 
-import styles from "src/styles";
-import searchIcon from "public/common-icons/search.svg";
-import { MenuToggler } from "./MenuToggler";
-import useWindowDimensions from "src/hooks/useWindowDimensions";
-import { MAX_PX_FOR_SHOW_NAVBAR } from "src/constants/common";
-import { RightDrawer } from "./RightDrawer";
+import {MAX_PX_FOR_SHOW_NAVBAR} from 'src/constants/common';
+import useWindowDimensions from 'src/hooks/useWindowDimensions';
+import styles from 'src/styles';
+
+import searchIcon from 'public/common-icons/search.svg';
+
+import {MenuToggler} from './MenuToggler';
+import {RightDrawer} from './RightDrawer';
 
 export function Navbar() {
-  const { width, height } = useWindowDimensions();
+  const {width, height} = useWindowDimensions();
 
   const navBarVisible = width <= MAX_PX_FOR_SHOW_NAVBAR;
 
@@ -18,11 +20,9 @@ export function Navbar() {
       <motion.nav
         className={`py-4 absolute w-[100vw] z-50 top-0 px-6 bg-[#2a052e]`}
         initial={false}
-        custom={height}
-      >
+        custom={height}>
         <div
-          className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
-        >
+          className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
           <Image
             src={searchIcon}
             alt="search"

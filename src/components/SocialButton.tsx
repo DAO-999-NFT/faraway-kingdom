@@ -1,8 +1,9 @@
-import Image from "next/image";
-import redditIcon from "public/social-icons/reddit.svg";
-import twitterIcon from "public/social-icons/twitter.svg";
-import discordIcon from "public/social-icons/discord.svg";
-import instagramIcon from "public/social-icons/instagram.svg";
+import Image from 'next/image';
+
+import discordIcon from 'public/social-icons/discord.svg';
+import instagramIcon from 'public/social-icons/instagram.svg';
+import redditIcon from 'public/social-icons/reddit.svg';
+import twitterIcon from 'public/social-icons/twitter.svg';
 
 const icons = {
   twitter: twitterIcon,
@@ -16,7 +17,7 @@ interface SocialButtonProps {
   className?: string;
 }
 
-export function SocialButton({ icon, className }: SocialButtonProps) {
+export function SocialButton({icon, className}: SocialButtonProps) {
   return (
     <button className={`hover:bg-gray-900 rounded-full p-1.5 ${className}`}>
       <Image

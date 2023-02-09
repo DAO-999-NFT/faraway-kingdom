@@ -1,6 +1,6 @@
-import { Navbar } from "src/components";
-import { RightDrawerProvider } from "src/context";
-import { About, Hero } from "src/sections";
+import {Navbar} from 'src/components';
+import {RightDrawerProvider} from 'src/context';
+import {About, Hero} from 'src/sections';
 
 export default function Home() {
   return (

@@ -1,3 +1,52 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals"],
+  "plugins": ["import", "prettier", "@typescript-eslint"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "prettier/prettier": "error",
+        "no-param-reassign": 0,
+        "react-hooks/rules-of-hooks": 1,
+        "react-hooks/exhaustive-deps": 0,
+        "react/function-component-definition": [
+          1,
+          {"namedComponents": "function-declaration"}
+        ],
+        "@typescript-eslint/no-unused-vars": "error",
+        "import/prefer-default-export": 0,
+        "import/no-default-export": 0,
+        "import/order": [
+          "error",
+          {
+            "groups": ["builtin", "external", "internal", "sibling"],
+            "pathGroups": [
+              {
+                "pattern": "react",
+                "group": "builtin",
+                "position": "before"
+              },
+              {
+                "pattern": "src/**",
+                "group": "external",
+                "position": "after"
+              }
+            ],
+            "pathGroupsExcludedImportTypes": ["react"],
+            "newlines-between": "always",
+            "alphabetize": {
+              "order": "asc",
+              "caseInsensitive": true
+            }
+          }
+        ],
+        "sort-imports": [
+          "error",
+          {
+            "ignoreDeclarationSort": true
+          }
+        ]
+      }
+    }
+  ]
 }

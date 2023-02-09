@@ -1,5 +1,6 @@
-import { FileWithPreview } from "src/types";
-import { Filelike, Web3File, Web3Storage } from "web3.storage";
+import {Filelike, Web3File, Web3Storage} from 'web3.storage';
+
+import {FileWithPreview} from 'src/types';
 
 class Nft {
   client: Web3Storage;
@@ -38,7 +39,7 @@ class Nft {
   async getNftByCID(cid: string) {
     const response = await this.client.get(cid);
     if (!response || !response.ok) {
-      throw new Error("failed to get nft");
+      throw new Error('failed to get nft');
     }
 
     let result: Web3File | undefined;

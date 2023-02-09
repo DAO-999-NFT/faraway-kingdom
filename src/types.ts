@@ -1,9 +1,9 @@
-import { DropEvent, FileRejection } from "react-dropzone";
+import {DropEvent, FileRejection} from 'react-dropzone';
 
 export type onDragType = <T extends File>(
   acceptedFiles: T[],
   fileRejections: FileRejection[],
-  event: DropEvent
+  event: DropEvent,
 ) => void;
 
-export type FileWithPreview = File & { preview: string };
+export type FileWithPreview = File & {preview: string};

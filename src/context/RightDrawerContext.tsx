@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import {createContext, useState} from 'react';
 
 interface ProvidedValue {
   setNotOpen: () => void;
@@ -16,7 +16,7 @@ interface RightDrawerProviderProps {
   children: React.ReactNode;
 }
 
-export const RightDrawerProvider = ({ children }: RightDrawerProviderProps) => {
+export function RightDrawerProvider({children}: RightDrawerProviderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -25,9 +25,8 @@ export const RightDrawerProvider = ({ children }: RightDrawerProviderProps) => {
         isOpen,
         setOpen: () => setIsOpen(true),
         setNotOpen: () => setIsOpen(false),
-      }}
-    >
+      }}>
       {children}
     </ThemeContext.Provider>
   );
-};
+}
