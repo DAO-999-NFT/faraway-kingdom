@@ -123,13 +123,10 @@ export function Hero() {
         </motion.div>
       )}
       {isnNavBlockVisible && (
-        <div
-          style={{ fontFamily: "Tuffy" }}
-          className="flex justify-center flex-row text-lg md:text-2xl text-white mt-4"
-        >
+        <div className="flex justify-center flex-row text-lg md:text-2xl text-white mt-4">
           <Link href="/">
             <motion.div
-              className="cursor-pointer"
+              className="cursor-pointer font-tuffy"
               onClick={onPressNav("home")}
               animate={textColor("home")}
               transition={{ duration: 0.5 }}
@@ -139,7 +136,7 @@ export function Hero() {
           </Link>
           &nbsp;|&nbsp;
           <motion.div
-            className="cursor-pointer"
+            className="cursor-pointer font-tuffy"
             onClick={onPressNav("sellAssets")}
             animate={textColor("sellAssets")}
             transition={{ duration: 0.5 }}
@@ -148,7 +145,7 @@ export function Hero() {
           </motion.div>
           &nbsp;|&nbsp;
           <motion.div
-            className="cursor-pointer"
+            className="cursor-pointer font-tuffy"
             onClick={onPressNav("myAssets")}
             animate={textColor("myAssets")}
             transition={{ duration: 0.5 }}
@@ -158,7 +155,7 @@ export function Hero() {
           &nbsp;|&nbsp;
           <Link href="/create-nft">
             <motion.div
-              className="cursor-pointer"
+              className="cursor-pointer font-tuffy"
               onClick={onPressNav("createNft")}
               animate={textColor("createNft")}
               transition={{ duration: 0.5 }}

@@ -16,7 +16,7 @@ export function Navbar() {
   return (
     <>
       <motion.nav
-        className={`py-4 absolute w-[100vw] z-50 top-0 px-6 bg-[#2a052e] border-b-[1px] border-gray-500`}
+        className={`py-4 absolute w-[100vw] z-50 top-0 px-6 bg-[#2a052e]`}
         initial={false}
         custom={height}
       >
@@ -30,10 +30,7 @@ export function Navbar() {
             height={40}
             className="w-[24px] h-[24px] object-contain"
           />
-          <h2
-            style={{ fontFamily: "Abel" }}
-            className="font-extrabold font-sans text-[24px] leading-[30.24px] text-white"
-          >
+          <h2 className="font-extrabold font-abel text-[24px] leading-[30.24px] text-white">
             METAVERSUS
           </h2>
 

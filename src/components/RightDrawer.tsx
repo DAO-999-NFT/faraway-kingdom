@@ -9,7 +9,7 @@ export function RightDrawer() {
   return (
     <motion.div
       animate={animation}
-      className="absolute z-50 right-0 h-[100vh] translate-y-4 mt-[1px] bg-[#2a052e]" //bg-[#2a052e]
+      className="absolute z-50 right-0 h-[100vh] translate-y-4 bg-[#2a052e]" //bg-[#2a052e]
       variants={sidebar}
     />
   );

@@ -1,9 +1,14 @@
+const { fontFamily } = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   mode: "jit",
   theme: {
     extend: {
+      fontFamily: {
+        abel: ["var(--font-abel)", ...fontFamily.sans],
+        tuffy: ["var(--font-tuffy)"],
+      },
       colors: {
         "primary-black": "#1A232E",
         "secondary-white": "#c7c7c7",
