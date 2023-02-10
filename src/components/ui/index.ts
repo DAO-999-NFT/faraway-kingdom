@@ -7,3 +7,4 @@ export * from './RightDrawer';
 export * from './MainSlider';
 export * from './SocialButton';
 export * from './LinkButton';
+export * from './NftCard';
