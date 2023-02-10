@@ -11,6 +11,8 @@ interface NftCardProps {
   owner: string;
   ownerAvatar: string | StaticImageData;
   chain: BlockchainNetworks;
+  width?: number;
+  widthSuffix?: string;
 }
 
 export function NftCard({
@@ -20,9 +22,23 @@ export function NftCard({
   owner,
   ownerAvatar,
   chain,
+  widthSuffix = 'px',
+  width = 400,
 }: NftCardProps) {
+  const w = `${width}${widthSuffix}`;
+  const h = `${(width / 4) * 5}${widthSuffix}`;
+
+  const fontSize1 = `${width / 16.66}${widthSuffix}`;
+  const fontSize2 = `${width / 20}${widthSuffix}`;
+  const fontSize3 = `${width / 26.66}${widthSuffix}`;
+  const imgSize = `${width / 10}${widthSuffix}`;
+
+  const bottomBlockH = `${width / 2.8}${widthSuffix}`;
+
   return (
-    <div className="w-[400px] h-[500px] flex flex-col-reverse relative overflow-hidden rounded-[24px]">
+    <div
+      style={{width: w, height: h, borderRadius: fontSize1}}
+      className="flex items-end relative overflow-hidden">
       <Image
         src={img}
         alt="nft"
@@ -30,23 +46,41 @@ export function NftCard({
         height={500}
         width={400}
       />
-      <div className="flex backdrop-blur-sm rounded-b-[24px] bg-[rgb(0,0,0,0.6)] h-[140px] w-full">
+      <div
+        style={{
+          height: bottomBlockH,
+          borderBottomLeftRadius: fontSize1,
+          borderBottomRightRadius: fontSize1,
+        }}
+        className="flex backdrop-blur-sm bg-[rgb(0,0,0,0.6)] w-full">
         <div className="flex flex-[0.65] flex-col h-full pl-[5%] py-[5%]">
-          <div className="text-[24px] text-white font-neucha">{name}</div>
-          <div className="flex flex-row  mt-[20px]">
+          <div style={{fontSize: fontSize1}} className="text-white font-neucha">
+            {name}
+          </div>
+          <div className="flex flex-row mt-[10%]">
             <Image
-              alt={'ava'}
+              alt="ava"
               height={100}
               width={100}
-              style={maskedStyle}
-              className={'w-[40px] h-[40px]'}
+              style={{
+                ...maskedStyle,
+                WebkitMaskSize: imgSize,
+                width: imgSize,
+                height: imgSize,
+              }}
               src={ownerAvatar}
             />
             <div className="flex flex-col ml-4">
-              <div className="text-[15px] text-secondary-white font-neucha">
+              <div
+                style={{fontSize: fontSize3}}
+                className="text-secondary-white font-neucha">
                 Creator
               </div>
-              <div className="text-[20px] text-white font-neucha">{owner}</div>
+              <div
+                style={{fontSize: fontSize2}}
+                className="text-white font-neucha">
+                {owner}
+              </div>
             </div>
           </div>
         </div>
@@ -55,15 +89,20 @@ export function NftCard({
             alt={chain}
             height={100}
             width={100}
+            style={{width: imgSize, height: imgSize}}
             className={'w-[40px] h-[40px] opacity-70'}
             src={BlockchainNetData[chain].logo}
           />
-          <div className="flex flex-col  mt-[20px] items-end">
-            <div className="text-[15px] text-secondary-white font-neucha">
+          <div className="flex flex-col mt-[15%] items-end">
+            <div
+              style={{fontSize: fontSize3}}
+              className="text-secondary-white font-neucha">
               Highest Bid
             </div>
-            <div className="text-[20px] text-white font-neucha">
-              {highestBid.toFixed(3)} {BlockchainNetData[chain].shortCoinName}
+            <div
+              style={{fontSize: fontSize2}}
+              className="text-white font-neucha">
+              {+highestBid.toFixed(3)} {BlockchainNetData[chain].shortCoinName}
             </div>
           </div>
         </div>
@@ -75,5 +114,4 @@ export function NftCard({
 const maskedStyle: CSSProperties = {
   WebkitMaskImage: 'url(avaMask.svg)',
   maskRepeat: 'no-repeat',
-  WebkitMaskSize: '40px',
 };

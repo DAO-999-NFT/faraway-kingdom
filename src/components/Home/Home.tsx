@@ -15,6 +15,33 @@ export function Home() {
         img={exampleNft}
         ownerAvatar={minionImg}
         owner="Minion rap"
+        name="Black Girl"
+        highestBid={10000}
+        chain="polygon"
+      />
+      <NftCard
+        width={300}
+        img={exampleNft}
+        ownerAvatar={minionImg}
+        owner="Minion inc"
+        name="Gold monkey"
+        highestBid={8.989}
+        chain="etherium"
+      />
+      <NftCard
+        width={200}
+        img={exampleNft}
+        ownerAvatar={minionImg}
+        owner="Minion Robert"
+        name="Gold monkey"
+        highestBid={8.989}
+        chain="polygon"
+      />
+      <NftCard
+        width={100}
+        img={exampleNft}
+        ownerAvatar={minionImg}
+        owner="Minion John"
         name="Gold monkey"
         highestBid={8.989}
         chain="polygon"
