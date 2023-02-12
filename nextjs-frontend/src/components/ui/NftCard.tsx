@@ -70,7 +70,7 @@ export function NftCard({
               }}
               src={ownerAvatar}
             />
-            <div className="flex flex-col ml-4">
+            <div className="flex flex-col ml-[8%]">
               <div
                 style={{fontSize: fontSize3}}
                 className="text-secondary-white font-neucha">

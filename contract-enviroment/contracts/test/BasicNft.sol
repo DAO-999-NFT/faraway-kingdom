@@ -3,6 +3,8 @@ pragma solidity ^0.8.7;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
+error QueryForNonexistentToken();
+
 contract BasicNft is ERC721 {
     string public constant TOKEN_URI =
         "ipfs://bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4/?filename=0-PUG.json";
@@ -21,7 +23,9 @@ contract BasicNft is ERC721 {
     }
 
     function tokenURI(uint256 tokenId) public view override returns (string memory) {
-        require(_exists(tokenId), "ERC721Metadata: URI query for nonexistent token");
+        if(!_exists(tokenId)) {
+          revert QueryForNonexistentToken();
+        }
         return TOKEN_URI;
     }
 

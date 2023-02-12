@@ -5,10 +5,7 @@ import 'solidity-coverage';
 import 'hardhat-gas-reporter';
 import 'hardhat-contract-sizer';
 import 'dotenv/config';
-
-/**
- * @type import('hardhat/config').HardhatUserConfig
- */
+import {HardhatUserConfig} from 'hardhat/config';
 
 const MAINNET_RPC_URL =
   process.env.MAINNET_RPC_URL ||
@@ -31,7 +28,7 @@ const POLYGONSCAN_API_KEY =
   process.env.POLYGONSCAN_API_KEY || 'Your polygonscan API key';
 const REPORT_GAS = process.env.REPORT_GAS || false;
 
-module.exports = {
+export default {
   defaultNetwork: 'hardhat',
   networks: {
     hardhat: {
@@ -109,4 +106,4 @@ module.exports = {
   mocha: {
     timeout: 200000, // 200 seconds max for running tests
   },
-};
+} as HardhatUserConfig;
