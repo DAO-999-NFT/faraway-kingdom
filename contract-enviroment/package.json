@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "solhint 'contracts/*.sol'",
     "lint:fix": "solhint 'contracts/**/*.sol' --fix",
-    "coverage": "hardhat coverage"
+    "coverage": "hardhat coverage",
+    "prettier": "prettier --write 'contracts/**/*.sol'"
   },
   "devDependencies": {
     "@chainlink/contracts": "^0.4.0",
