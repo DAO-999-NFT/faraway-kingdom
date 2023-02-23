@@ -78,11 +78,6 @@ const config = {
             label: "Docs",
           },
           { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/DAO-999-NFT",
-            label: "GitHub",
-            position: "right",
-          },
         ],
       },
       footer: {
