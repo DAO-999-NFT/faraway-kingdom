@@ -1,22 +1,23 @@
-import React from "react";
+import React from 'react';
 
-import { EffectCoverflow, Scrollbar } from "swiper";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import {EffectCoverflow, Scrollbar} from 'swiper';
+import {Swiper, SwiperSlide, useSwiper} from 'swiper/react';
 
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import useWindowDimensions from "@site/src/hooks/useWindowDimensions";
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import useWindowDimensions from 'src/hooks/useWindowDimensions';
 
-import LeftIcon from "@site/static/img/common-icons/chevron-left.svg";
-import RightIcon from "@site/static/img/common-icons/chevron-right.svg";
-import { NftCard } from "./NftCard";
+import LeftIcon from 'static/img/common-icons/chevron-left.svg';
+import RightIcon from 'static/img/common-icons/chevron-right.svg';
+
+import {NftCard} from './NftCard';
 
 interface MainSliderProps {
   data: string[];
 }
 
-export function MainSlider({ data }: MainSliderProps) {
-  const { width } = useWindowDimensions();
+export function MainSlider({data}: MainSliderProps) {
+  const {width} = useWindowDimensions();
 
   return (
     <Swiper
@@ -33,13 +34,12 @@ export function MainSlider({ data }: MainSliderProps) {
         depth: 100,
         modifier: 1,
       }}
-      pagination={{ clickable: true }}
+      pagination={{clickable: true}}
       navigation={{
-        nextEl: "swiper-button-next",
-        prevEl: "swiper-button-prev",
+        nextEl: 'swiper-button-next',
+        prevEl: 'swiper-button-prev',
       }}
-      className="swiper mt-6 w-full"
-    >
+      className="swiper mt-6 w-full">
       {data.map((item, index) => {
         return (
           <SwiperSlide key={index} className="h-auto">
@@ -60,7 +60,7 @@ export function MainSlider({ data }: MainSliderProps) {
 
       <div className="flex flex-row justify-center mt-6">
         <NavButton isLeft />
-        <div className="border-dashed self-center border-white w-9 mx-2 h-0 border-[1px]" />
+        <div className="self-center w-9 mx-2 h-0" />
         <NavButton />
       </div>
     </Swiper>
@@ -71,7 +71,7 @@ interface NavButtonProps {
   isLeft?: boolean;
 }
 
-function NavButton({ isLeft }: NavButtonProps) {
+function NavButton({isLeft}: NavButtonProps) {
   const swiper = useSwiper();
 
   if (isLeft) {
@@ -79,9 +79,8 @@ function NavButton({ isLeft }: NavButtonProps) {
       <div
         onClick={() => swiper.slidePrev()}
         className={
-          "rounded-full text-white font-mono border-white border-[1px] p-[1em] cursor-pointer"
-        }
-      >
+          'rounded-full text-white font-mono border-white border-[1px] p-[1em] cursor-pointer'
+        }>
         <LeftIcon className="w-[1em] h-[1em]" />
       </div>
     );
@@ -90,9 +89,8 @@ function NavButton({ isLeft }: NavButtonProps) {
       <div
         onClick={() => swiper.slideNext()}
         className={
-          "rounded-full text-white font-mono border-white border-[1px] p-[1em] cursor-pointer"
-        }
-      >
+          'rounded-full text-white font-mono border-white border-[1px] p-[1em] cursor-pointer'
+        }>
         <RightIcon className="w-[1em] h-[1em]" />
       </div>
     );
