@@ -60,15 +60,13 @@ export function WelcomeSection({
         />
         <h1
           style={{
-            fontFamily: 'Montserrat Alternates',
             lineHeight: '0.8em',
-          }}
-          className="font-bold text-center text-[3.4em] sm:text-[5.5em] text-white">
+          }}>
           ТРИДЕВЯТОЕ
           <br />
           ЦАРСТВО
         </h1>
-        <h2
+        <div
           style={{
             fontFamily: 'ProximaNovaRegular',
             letterSpacing: '0.8em',
@@ -76,7 +74,7 @@ export function WelcomeSection({
           }}
           className="text-center text-white text-[1.875em] mt-6">
           METAVERSE
-        </h2>
+        </div>
         <MainSlider data={sliderImages} />
         <div
           style={{fontFamily: 'ProximaNovaRegular'}}
