@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "ProximaNovaBlack";
+  src: local("ProximaNovaBlack"),
+    url("/fonts/ProximaNova/proximanova_black.otf") format("opentype");
+}
+@font-face {
+  font-family: "ProximaNovaBlackItalic";
+  src: local("ProximaNovaBlackItalic"),
+    url("/fonts/ProximaNova/proximanova_black_italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "ProximaNovaBoldItalic";
+  src: local("ProximaNovaBoldItalic"),
+    url("/fonts/ProximaNova/proximanova_bold_italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: local("ProximaNovaBold"),
+    url("/fonts/ProximaNova/proximanova_bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "ProximaNovaExtraBold";
+  src: local("ProximaNovaExtraBold"),
+    url("/fonts/ProximaNova/proximanova_extrabold.otf") format("opentype");
+}
+@font-face {
+  font-family: "ProximaNovaRegular";
+  src: local("ProximaNovaRegular"),
+    url("/fonts/ProximaNova/proximanova_regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ProximaNovaLight";
+  src: local("ProximaNovaLight"),
+    url("/fonts/ProximaNova/proximanova_light.otf") format("opentype");
+}
+
+.bg-gradient-1 {
+  background: linear-gradient(
+    147.83deg,
+    #a0fae3 8.25%,
+    #bcd7ee 14.99%,
+    #d8b7fa 22.4%,
+    rgba(255, 113, 167, 0.88) 75.61%
+  );
+}
+
+@layer components {
+  .content-container {
+    @apply max-w-[1065px] w-full m-auto flex flex-col;
+  }
+  .button-outline {
+    @apply py-[1.25em] px-[1.625em] border-[0.08rem] self-start text-[1.25em] rounded-full;
+    font-family: "ProximaNovaBold";
+  }
+}
+.content-container {
+  font-size: 16px;
+}
+@media (max-width: 990px) {
+  .content-container {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 620px) {
+  .content-container {
+    font-size: 6px;
+  }
+}
