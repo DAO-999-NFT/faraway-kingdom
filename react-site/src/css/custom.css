@@ -70,12 +70,12 @@
 
 @media (max-width: 768px) {
   .content-container {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
 @media (max-width: 620px) {
   .content-container {
-    font-size: 10px;
+    font-size: 12px;
   }
 }

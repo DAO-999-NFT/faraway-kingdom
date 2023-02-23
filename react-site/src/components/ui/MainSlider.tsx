@@ -25,11 +25,10 @@ export function MainSlider({ data }: MainSliderProps) {
       centeredSlides
       modules={[EffectCoverflow, Scrollbar]}
       loop
-      slidesPerView={width > 700 ? 5 : width > 550 ? 4 : width > 310 ? 3 : 2.2}
+      slidesPerView={width > 990 ? 5 : width > 630 ? 5 : 3}
       coverflowEffect={{
         slideShadows: false,
         rotate: 20,
-        stretch: 0,
         scale: 0.95,
         depth: 100,
         modifier: 1,
@@ -43,18 +42,18 @@ export function MainSlider({ data }: MainSliderProps) {
     >
       {data.map((item, index) => {
         return (
-          <SwiperSlide key={index} className="h-auto shadow-none">
-            <NftCard
-              width={
-                width > 700 ? 240 : width > 550 ? 200 : width > 310 ? 160 : 140
-              }
-              name="Vadim"
-              chain="polygon"
-              highestBid={200}
-              ownerAvatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwfygMkcjv9HqIJrAhrd4Xke0YxQRO16je2Q&usqp=CAU"
-              owner="Minion band"
-              img={item}
-            />
+          <SwiperSlide key={index} className="h-auto">
+            <div className="w-full flex flex-col items-center">
+              <NftCard
+                width={width > 990 ? 230 : width > 630 ? width / 4 : 190}
+                name="Vadim"
+                chain="polygon"
+                highestBid={200}
+                ownerAvatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwfygMkcjv9HqIJrAhrd4Xke0YxQRO16je2Q&usqp=CAU"
+                owner="Minion band"
+                img={item}
+              />
+            </div>
           </SwiperSlide>
         );
       })}

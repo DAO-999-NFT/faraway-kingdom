@@ -39,8 +39,12 @@ export function NftCard({
   const NetworkLogo = BlockchainNetData[chain].logo;
   return (
     <div
-      style={{ width: w, height: h, borderRadius: fontSize1 }}
-      className="flex items-end relative overflow-hidden border-4 border-white"
+      style={{
+        width: w,
+        height: h,
+        borderRadius: fontSize1,
+      }}
+      className="flex items-end relative overflow-hidden border-4 border-white "
     >
       <img src={img} alt="nft" className="absolute w-full h-full" />
       <div
