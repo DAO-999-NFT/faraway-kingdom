@@ -25,7 +25,7 @@ export function MainSlider({ data }: MainSliderProps) {
       centeredSlides
       modules={[EffectCoverflow, Scrollbar]}
       loop
-      slidesPerView={width > 700 ? 5 : width > 550 ? 4 : 3}
+      slidesPerView={width > 700 ? 5 : width > 550 ? 4 : width > 310 ? 3 : 2.2}
       coverflowEffect={{
         slideShadows: false,
         rotate: 20,
@@ -45,7 +45,9 @@ export function MainSlider({ data }: MainSliderProps) {
         return (
           <SwiperSlide key={index} className="h-auto shadow-none">
             <NftCard
-              width={240}
+              width={
+                width > 700 ? 240 : width > 550 ? 200 : width > 310 ? 160 : 140
+              }
               name="Vadim"
               chain="polygon"
               highestBid={200}
@@ -78,10 +80,10 @@ function NavButton({ isLeft }: NavButtonProps) {
       <div
         onClick={() => swiper.slidePrev()}
         className={
-          "rounded-full text-white font-mono border-white border-[1px] p-4 cursor-pointer"
+          "rounded-full text-white font-mono border-white border-[1px] p-[1em] cursor-pointer"
         }
       >
-        <LeftIcon className="w-4 h-4" />
+        <LeftIcon className="w-[1em] h-[1em]" />
       </div>
     );
   } else {
@@ -89,10 +91,10 @@ function NavButton({ isLeft }: NavButtonProps) {
       <div
         onClick={() => swiper.slideNext()}
         className={
-          "rounded-full text-white font-mono border-white border-[1px] p-4 cursor-pointer"
+          "rounded-full text-white font-mono border-white border-[1px] p-[1em] cursor-pointer"
         }
       >
-        <RightIcon className="w-4 h-4" />
+        <RightIcon className="w-[1em] h-[1em]" />
       </div>
     );
   }

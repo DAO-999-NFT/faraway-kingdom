@@ -30,6 +30,7 @@ export function WelcomeSection({
         src={cloudR}
         initial={{ x: "100%" }}
         whileInView={{ x: 0 }}
+        viewport={{ once: true }}
         transition={{ ease: "easeOut", duration: 1, bounce: false }}
         draggable={false}
       />
@@ -38,6 +39,7 @@ export function WelcomeSection({
         src={castleL}
         initial={{ y: "80%" }}
         whileInView={{ y: 0 }}
+        viewport={{ once: true }}
         transition={{ ease: "easeOut", duration: 1.2, bounce: false }}
         draggable={false}
       />
@@ -46,6 +48,7 @@ export function WelcomeSection({
         src={castleR}
         initial={{ y: "80%" }}
         whileInView={{ y: 0 }}
+        viewport={{ once: true }}
         transition={{ ease: "easeOut", duration: 1.2, bounce: false }}
         draggable={false}
       />
@@ -59,7 +62,7 @@ export function WelcomeSection({
             fontFamily: "Montserrat Alternates",
             lineHeight: "0.8em",
           }}
-          className="font-bold text-center text-[5.5em] text-white"
+          className="font-bold text-center text-[3.4em] sm:text-[5.5em] text-white"
         >
           ТРИДЕВЯТОЕ
           <br />
@@ -78,7 +81,7 @@ export function WelcomeSection({
         <MainSlider data={sliderImages} />
         <div
           style={{ fontFamily: "ProximaNovaRegular" }}
-          className="text-center text-white text-[1.125em] mt-[2em] mb-[1.5rem]"
+          className="text-center text-white text-[1.2em] mt-[2em] mb-[1.5em]"
         >
           Клубная социальная NFT-платформа для покупки и<br />
           продажи NFT-билетов на лучшие вечеринки мира

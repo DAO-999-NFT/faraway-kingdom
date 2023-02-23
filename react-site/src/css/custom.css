@@ -64,18 +64,18 @@
 }
 @media (max-width: 990px) {
   .content-container {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 768px) {
   .content-container {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 620px) {
   .content-container {
-    font-size: 6px;
+    font-size: 10px;
   }
 }
