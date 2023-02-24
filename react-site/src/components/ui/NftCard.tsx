@@ -52,7 +52,7 @@ export function NftCard({
           borderBottomLeftRadius: fontSize1,
           borderBottomRightRadius: fontSize1,
         }}
-        className="flex flex-col backdrop-blur-sm bg-[rgb(0,0,0,0.2)] w-full">
+        className="flex flex-col z-[5] backdrop-blur-sm bg-[rgb(0,0,0,0.2)] w-full">
         <div className="flex flex-row justify-between px-[5%] pt-[5%]">
           <div
             style={{fontFamily: 'ProximaNovaBold', fontSize: fontSize1}}
