@@ -57,7 +57,9 @@ export function AboutSection() {
           className="absolute top-[-105%] left-[15%]"
         />
         <div className="content-container py-[1.5em] px-[30px] sm:px-[90px]">
-          <h2 className="text-white opacity-90">ИНВЕСТОРАМ</h2>
+          <h2 className="text-white opacity-90 mb-[0.2em] pt-[0.8em]">
+            ИНВЕСТОРАМ
+          </h2>
           <h3 className="text-white opacity-90 mt-[1em]">Как мы устроены</h3>
           <p className="text-white mt-[1em] mb-[1.4em]">
             Тридевятое Царство состоит из 27 пулов ликвидности, где каждый пул

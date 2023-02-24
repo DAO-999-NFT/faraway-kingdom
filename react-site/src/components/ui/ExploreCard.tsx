@@ -47,10 +47,8 @@ export function ExploreCard({
           transition={{
             delay: 0.5,
           }}
-          className="absolute bottom-0 p-4 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.7)] rounded-b-[24px]">
-          <div className="sm:text-[24px] md:text-[18px] text-secondary-white  font-neucha">
-            {content}
-          </div>
+          className="absolute bottom-0 p-4 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.2)] rounded-b-[24px]">
+          <p>{content}</p>
         </motion.div>
       )}
     </motion.div>
