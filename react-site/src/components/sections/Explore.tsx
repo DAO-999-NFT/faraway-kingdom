@@ -36,7 +36,7 @@ export function ExploreSection() {
         </div>
         <div className="text-content">
           <h2 className="text-[#FF82B2] b-[0.5em] pt-[0.8em]">Промоутерам</h2>
-          <h3 className="text-[#FF82B2]">Подключайтесь к нам</h3>
+          <h3 className="text-[#FF82B2] mt-[1em]">Подключайтесь к нам</h3>
           <p className="text-[#53676C] pt-[0.4em] pb-[3em]">
             Создавайте свои ивенты на нашей платформе и продавайте на них билеты
             нашей активной аудитории клаберов со всего мира. Получайте
@@ -63,19 +63,25 @@ export function ExploreSection() {
             <div className="flex flex-row flex-wrap gap-y-[1.25em] text-white">
               <div className="flex flex-col min-w-[100px] max-w-[50%] flex-1 mr-[0.5em]">
                 <CircleOrderNumber textColor="#DAB7FB">1</CircleOrderNumber>
-                <p>Бесплатно зарегистри-руйтесь через meta-mask</p>
+                <p className="l-p">
+                  Бесплатно зарегистри-руйтесь через meta-mask
+                </p>
               </div>
               <div className="flex flex-col min-w-[100px] max-w-[50%] flex-1 mx-[0.5em]">
                 <CircleOrderNumber textColor="#EEA3FE">2</CircleOrderNumber>
-                <p>Получите доступ к приложению</p>
+                <p className="l-p">Получите доступ к приложению</p>
               </div>
               <div className="flex flex-col min-w-[100px] max-w-[50%] flex-1 mx-[0.5em]">
                 <CircleOrderNumber textColor="#FB97FF">3</CircleOrderNumber>
-                <p>Создавайте ивенты и загру-жайте их на платформу</p>
+                <p className="l-p">
+                  Создавайте ивенты и загру-жайте их на платформу
+                </p>
               </div>
               <div className="flex flex-col min-w-[100px] max-w-[50%] flex-1 ml-[0.5em]">
                 <CircleOrderNumber textColor="#FD8BE8">4</CircleOrderNumber>
-                <p>Получайте прибыль с продажи каждого билета</p>
+                <p className="l-p">
+                  Получайте прибыль с продажи каждого билета
+                </p>
               </div>
             </div>
             <button className="button-outline self-end mt-[1em]">

@@ -1,4 +1,3 @@
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -73,29 +72,29 @@
     @apply max-w-[1065px] w-full m-auto flex flex-col;
   }
   .button-outline {
-    @apply text-white py-[0.75em] px-[1.25em] border-[0.08rem] self-start text-[1.25em] rounded-full;
+    @apply text-white cursor-pointer bg-transparent border-solid border-white py-[0.75em] px-[1.25em] border-[0.08rem] self-start text-[1.25em] rounded-full;
     font-family: 'ProximaNovaBold';
   }
   .button-solid {
-    @apply py-[0.65em] text-white px-[1.5em] opacity-90 bg-[#FF71A7] self-start text-[1.25em] rounded-full;
+    @apply py-[0.65em] cursor-pointer border-none text-white px-[1.5em] opacity-90 bg-[#FF71A7] self-start text-[1.25em] rounded-full;
     font-family: 'ProximaNovaBold';
   }
   .text-content {
     @apply px-[30px] sm:px-[90px];
   }
-  h1 {
+  .content-container h1 {
     @apply font-bold text-center text-[3.4em] sm:text-[5.5em] text-white;
     font-family: 'Montserrat Alternates';
   }
-  h2 {
+  .content-container h2 {
     @apply font-bold text-[1.9em] flex flex-1;
     font-family: 'Montserrat Alternates';
   }
-  h3 {
+  .content-container h3 {
     @apply font-bold text-[1.7em];
     font-family: 'Montserrat Alternates';
   }
-  p {
+  .content-container p {
     @apply font-[1em];
     line-height: 1.35em;
     font-family: 'ProximaNovaRegular';
@@ -120,4 +119,28 @@
   .content-container {
     font-size: 12px;
   }
+}
+
+:root {
+  --ifm-color-primary: #ff82b2;
+  --ifm-color-primary-dark: #ff82b2;
+  --ifm-color-primary-darker: #ff82b2;
+  --ifm-color-primary-darkest: #ff82b2;
+  --ifm-color-primary-light: #ff82b2;
+  --ifm-color-primary-lighter: #ff82b2;
+  --ifm-color-primary-lightest: #ff82b2;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #ff82b2;
+  --ifm-color-primary-dark: #ff82b2;
+  --ifm-color-primary-darker: #ff82b2;
+  --ifm-color-primary-darkest: #ff82b2;
+  --ifm-color-primary-light: #ff82b2;
+  --ifm-color-primary-lighter: #ff82b2;
+  --ifm-color-primary-lightest: #ff82b2;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }

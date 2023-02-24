@@ -6,9 +6,10 @@ import Layout from '@theme/Layout';
 import {WelcomeSection} from 'src/components/sections/Welcome';
 
 import {mainSliderImages} from 'img/main-slider-images';
+
 import {AboutSection} from '../components/sections/About';
-import {PosterSection} from '../components/sections/Poster';
 import {ExploreSection} from '../components/sections/Explore';
+import {PosterSection} from '../components/sections/Poster';
 
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();

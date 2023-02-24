@@ -3,6 +3,7 @@ import React from 'react';
 import useWindowDimensions from '@site/src/hooks/useWindowDimensions';
 
 import TriangularGrid from 'img/triangularGrid.svg';
+
 export function AboutSection() {
   const {width} = useWindowDimensions();
   return (

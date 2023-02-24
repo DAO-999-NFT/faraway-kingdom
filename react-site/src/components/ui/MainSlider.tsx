@@ -79,7 +79,7 @@ function NavButton({isLeft}: NavButtonProps) {
       <div
         onClick={() => swiper.slidePrev()}
         className={
-          'rounded-full text-white font-mono border-white border-[1px] p-[1em] cursor-pointer'
+          'rounded-full text-white font-mono border-solid border-white border-[1px] w-[3em] h-[3em] flex items-center justify-center cursor-pointer'
         }>
         <LeftIcon className="w-[1em] h-[1em]" />
       </div>
@@ -89,7 +89,7 @@ function NavButton({isLeft}: NavButtonProps) {
       <div
         onClick={() => swiper.slideNext()}
         className={
-          'rounded-full text-white font-mono border-white border-[1px] p-[1em] cursor-pointer'
+          'rounded-full text-white font-mono border-solid aspect-square border-white border-[1px] w-[3em] h-[3em] flex items-center justify-center cursor-pointer'
         }>
         <RightIcon className="w-[1em] h-[1em]" />
       </div>

@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import { motion } from "framer-motion";
+import {motion} from 'framer-motion';
 
-import { footerVariants } from "src/utils/motion";
+import {footerVariants} from 'src/utils/motion';
 
 export function Footer() {
   return (
@@ -10,8 +10,7 @@ export function Footer() {
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
-      className={`py-8 relative`}
-    >
+      className={`py-8 relative`}>
       <div className={`mx-auto flex flex-col gap-8`}>
         <div className="flex items-center justify-between flex-wrap gap-5">
           <h4 className="font-bold md:text-[64px] text-[44px] text-white">
@@ -19,8 +18,7 @@ export function Footer() {
           </h4>
           <button
             type="button"
-            className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]"
-          >
+            className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
             <img
               src="/headset.svg"
               alt="headset"

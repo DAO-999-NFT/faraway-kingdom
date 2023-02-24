@@ -59,6 +59,7 @@ export function WelcomeSection({
           className="self-center mb-[0.75em] aspect-square"
         />
         <h1
+          className="l-h1"
           style={{
             lineHeight: '0.8em',
           }}>
