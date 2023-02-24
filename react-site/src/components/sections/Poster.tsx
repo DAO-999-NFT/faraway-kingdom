@@ -1,11 +1,11 @@
 import React from 'react';
 
-import LargePoster from 'img/largePoster.svg';
+import largePoster from 'img/largePoster.jpg';
 
 export function PosterSection() {
   return (
     <section className="bg-white overflow-hidden">
-      <LargePoster width="115%" height="100%" className="translate-x-[-5%]" />
+      <img src={largePoster} className="w-full" />
     </section>
   );
 }
