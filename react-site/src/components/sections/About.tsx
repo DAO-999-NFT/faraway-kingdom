@@ -53,9 +53,9 @@ export function AboutSection() {
       </section>
       <section className="bg-gradient-2 relative overflow-hidden">
         <TriangularGrid
-          width={width * 1.1}
-          height={width * 1.1 * 1.33}
-          className="absolute top-[-105%] left-[15%]"
+          width={width}
+          height={width * 1.33}
+          className="absolute top-[-160%] ms:top-[-20%] left-[15%]"
         />
         <div className="content-container py-[1.5em] px-[30px] sm:px-[90px]">
           <h2 className="text-white opacity-90 mb-[0.2em] pt-[0.8em]">

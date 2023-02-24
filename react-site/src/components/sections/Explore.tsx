@@ -46,18 +46,17 @@ export function ExploreSection() {
         </div>
       </div>
       <div className="relative">
-        {
-          <motion.img
-            initial={{y: '50%', x: '50%'}}
-            whileInView={{y: 0, x: '40%'}}
-            viewport={{once: true}}
-            transition={{ease: 'easeOut', duration: 1.2, bounce: false}}
-            className="w-[30%] max-w-[500px] hidden castle:block absolute z-10 right-0 top-[-90%]"
-            src={castleOnCloud}
-          />
-        }
+        <motion.img
+          initial={{y: '50%', x: '50%'}}
+          whileInView={{y: 0, x: '40%'}}
+          viewport={{once: true}}
+          transition={{ease: 'easeOut', duration: 1.2, bounce: false}}
+          className="w-[30%] max-w-[500px] hidden castle:block absolute z-10 right-0 top-[-90%]"
+          src={castleOnCloud}
+        />
+
         <div className="bg-gradient-3 relative overflow-hidden">
-          <TriangularGridLeftPart height="100%" className="absolute left-0" />
+          <TriangularGridLeftPart height="100%" className="absolute" />
           <div className="content-container py-[1.5em] pb-[2em] text-content">
             <h3 className="text-white pb-[1em]">Как зарабатывать с нами:</h3>
             <div className="flex flex-row flex-wrap gap-y-[1.25em] text-white">
