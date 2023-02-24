@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {SVGMotionProps, motion} from 'framer-motion';
 
 interface MenuTogglerProps {
