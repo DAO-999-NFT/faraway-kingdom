@@ -1,6 +1,6 @@
 import React from 'react';
 
-import largePoster from 'img/largePoster.jpg';
+import largePoster from 'img/largePoster.png';
 
 export function PosterSection() {
   return (
