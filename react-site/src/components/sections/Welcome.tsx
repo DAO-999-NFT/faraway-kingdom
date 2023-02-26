@@ -66,9 +66,9 @@ export function WelcomeSection({
             marginTop: '0.3em',
             lineHeight: '0.8em',
           }}>
-          ТРИДЕВЯТОЕ
+          999 NFT
           <br />
-          ЦАРСТВО
+          KINGDOM
         </h1>
         {/* <div
           style={{
