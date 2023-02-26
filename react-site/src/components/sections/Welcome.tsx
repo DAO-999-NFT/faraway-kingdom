@@ -70,7 +70,7 @@ export function WelcomeSection({
           <br />
           ЦАРСТВО
         </h1>
-        <div
+        {/* <div
           style={{
             fontFamily: 'ProximaNovaRegular',
             letterSpacing: '0.8em',
@@ -78,13 +78,13 @@ export function WelcomeSection({
           }}
           className="text-center text-white text-[1.875em] mt-6">
           METAVERSE
-        </div>
+        </div> */}
 
         <div
           style={{fontFamily: 'ProximaNovaRegular'}}
-          className="text-center text-white text-[1.2em] mt-[2em] mb-[1.5em]">
+          className="text-center text-white text-[1.2em] mt-[0.5em] mb-[1.5em]">
           Клубная социальная NFT-платформа для покупки и<br />
-          продажи NFT-билетов на лучшие вечеринки мира
+          продажи NFT-билетов
         </div>
         <button className="button-outline text-white self-center mb-[100px]">
           Узнать больше

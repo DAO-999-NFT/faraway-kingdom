@@ -101,6 +101,14 @@ const config = {
                 label: 'Discord',
                 href: 'https://discord.gg/HqX3Dj3mhP',
               },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/999metaverse',
+              },
+              {
+                label: 'OpenSea',
+                href: 'https://opensea.io/999kingdom',
+              },
             ],
           },
           {
@@ -117,7 +125,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} DAO 999 NFT. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
