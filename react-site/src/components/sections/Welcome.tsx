@@ -54,13 +54,16 @@ export function WelcomeSection({
         draggable={false}
       />
       <div className="content-container pt-[30px] pb-[1.5em] px-[2em]">
-        <PageTopLogo
+        <MainSlider data={sliderImages} />
+        {/* <PageTopLogo
           width="200px"
           className="self-center mb-[0.75em] aspect-square"
-        />
+        /> */}
+
         <h1
           className="l-h1"
           style={{
+            marginTop: '0.3em',
             lineHeight: '0.8em',
           }}>
           ТРИДЕВЯТОЕ
@@ -76,7 +79,7 @@ export function WelcomeSection({
           className="text-center text-white text-[1.875em] mt-6">
           METAVERSE
         </div>
-        <MainSlider data={sliderImages} />
+
         <div
           style={{fontFamily: 'ProximaNovaRegular'}}
           className="text-center text-white text-[1.2em] mt-[2em] mb-[1.5em]">
