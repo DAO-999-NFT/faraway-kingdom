@@ -2,6 +2,7 @@
   "name": "faraway-kingdom",
   "version": "0.0.1",
   "private": true,
+  "homepage": ".",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

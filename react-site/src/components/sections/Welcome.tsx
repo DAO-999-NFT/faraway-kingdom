@@ -3,7 +3,6 @@ import React from 'react';
 import {MainSlider} from '@site/src/components/ui/MainSlider';
 import {motion} from 'framer-motion';
 
-import PageTopLogo from 'img/PageTopLogo.svg';
 import castleL from 'img/welcome/castleL.png';
 import castleR from 'img/welcome/castleR.png';
 import cloudL from 'img/welcome/cloudL.png';
@@ -60,16 +59,10 @@ export function WelcomeSection({
           className="self-center mb-[0.75em] aspect-square"
         /> */}
 
-        <h1
-          className="l-h1"
-          style={{
-            marginTop: '0.3em',
-            lineHeight: '0.8em',
-          }}>
-          999 NFT
-          <br />
-          KINGDOM
+        <h1 style={{marginTop: '0.3em', fontSize: '6.8em'}} className="">
+          999NFT
         </h1>
+        <h1>KINGDOM</h1>
         {/* <div
           style={{
             fontFamily: 'ProximaNovaRegular',
