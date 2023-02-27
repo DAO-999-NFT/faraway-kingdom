@@ -6,6 +6,7 @@ import TriangularGrid from 'img/triangularGrid.svg';
 
 export function AboutSection() {
   const {width} = useWindowDimensions();
+
   return (
     <>
       <section className="bg-white">
