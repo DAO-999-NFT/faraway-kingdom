@@ -3,7 +3,7 @@ import React, {CSSProperties} from 'react';
 import {
   BlockchainNetData,
   BlockchainNetworks,
-} from '@site/src/constants/BlockchainNetData';
+} from '@site/src/constants/blockchainNetData';
 
 interface NftCardProps {
   img: string;

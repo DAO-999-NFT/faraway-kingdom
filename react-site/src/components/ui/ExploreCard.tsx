@@ -1,11 +1,11 @@
 import React from 'react';
 
-import {motion} from 'framer-motion';
-
 import {
   exploreContentsItem,
   exploreContentsItemNames,
-} from 'src/constants/ContentForExploreCards';
+} from '@site/src/constants/contentForExploreCards';
+import {motion} from 'framer-motion';
+
 import {fadeIn} from 'src/utils/motion';
 
 interface ExploreCardProps extends exploreContentsItem {

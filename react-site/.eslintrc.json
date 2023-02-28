@@ -64,5 +64,10 @@
       1,
       {"namedComponents": "function-declaration"}
     ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
