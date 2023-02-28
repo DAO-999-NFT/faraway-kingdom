@@ -8,7 +8,7 @@ import {
 interface NftCardProps {
   img: string;
   name: string;
-  highestBid: number;
+  highestBid?: number;
   owner: string;
   ownerAvatar: string;
   chain: BlockchainNetworks;
@@ -19,7 +19,7 @@ interface NftCardProps {
 export function NftCard({
   img,
   name,
-  highestBid,
+  highestBid = 100,
   owner,
   ownerAvatar,
   chain,
@@ -87,31 +87,41 @@ export function NftCard({
                   className="text-white">
                   Creator
                 </div>
+
                 <div
-                  style={{fontFamily: 'ProximaNovaBold', fontSize: fontSize2}}
-                  className="text-white font-neucha">
+                  style={{
+                    width: '65%',
+                    textOverflow: 'ellipsis',
+                    whiteSpace: 'nowrap',
+                    overflow: 'hidden',
+                    fontFamily: 'ProximaNovaBold',
+                    fontSize: fontSize2,
+                  }}
+                  className="text-white">
                   {owner}
                 </div>
               </div>
             </div>
           </div>
           <div className="flex flex-[0.35] flex-col items-end h-full pr-[5%]">
-            <div className="flex flex-col items-end">
-              <div
-                style={{
-                  fontFamily: 'ProximaNovaRegular',
-                  fontSize: fontSize3,
-                }}
-                className="font-neucha text-white">
-                Highest Bid
+            {highestBid && (
+              <div className="flex flex-col items-end">
+                <div
+                  style={{
+                    fontFamily: 'ProximaNovaRegular',
+                    fontSize: fontSize3,
+                  }}
+                  className="font-neucha text-white">
+                  Highest Bid
+                </div>
+                <div
+                  style={{fontFamily: 'ProximaNovaBlack', fontSize: fontSize2}}
+                  className="text-white font-neucha">
+                  {+highestBid.toFixed(3)}{' '}
+                  {BlockchainNetData[chain].shortCoinName}
+                </div>
               </div>
-              <div
-                style={{fontFamily: 'ProximaNovaBlack', fontSize: fontSize2}}
-                className="text-white font-neucha">
-                {+highestBid.toFixed(3)}{' '}
-                {BlockchainNetData[chain].shortCoinName}
-              </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

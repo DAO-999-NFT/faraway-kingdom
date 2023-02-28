@@ -40,18 +40,17 @@ export function MainSlider({data}: MainSliderProps) {
         prevEl: 'swiper-button-prev',
       }}
       className="swiper mt-6 w-full">
-      {data.map((item, index) => {
+      {data.map(({image, name}, index) => {
         return (
           <SwiperSlide key={index} className="h-auto">
             <div className="w-full flex flex-col items-center">
               <NftCard
                 width={width > 990 ? 230 : width > 630 ? width / 4 : 190}
-                name="Vadim"
-                chain="polygon"
-                highestBid={200}
-                ownerAvatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwfygMkcjv9HqIJrAhrd4Xke0YxQRO16je2Q&usqp=CAU"
-                owner="Minion band"
-                img={item}
+                name={name}
+                chain="etherium"
+                ownerAvatar="https://i.seadn.io/gae/hP4JJhiY5yXu1mCvNycTke2O_xbtgIFfkLTjfT7C9TNKinkGpP2COikt7cwn0xqzoATRNC21wsiwy_Fe-MQ3PPTgRjkbbCfJf__L?auto=format&w=512"
+                owner="Worlds of Women Galaxy"
+                img={image}
               />
             </div>
           </SwiperSlide>
