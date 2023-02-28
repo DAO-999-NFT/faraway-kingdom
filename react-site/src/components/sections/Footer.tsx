@@ -28,10 +28,20 @@ export function FooterSection() {
         </div>
         <h3 className="text-white mt-[1.7em]">Команда</h3>
         <div className="flex flex-row justify-between flex-wrap">
-          {ourCommand.map(({name, role, img}) => {
+          {ourCommand.map(({name, role, img, instLink}) => {
+            console.log('🚀 - instLink:', instLink);
             return (
-              <div className="text-center flex flex-col flex-1 max-w-[20%] min-w-[120px]">
+              <div
+                key={name}
+                onClick={
+                  instLink ? () => window.open(instLink, '_blank') : undefined
+                }
+                style={{
+                  cursor: instLink ? 'pointer' : 'default',
+                }}
+                className="text-center hover:opacity-90 active:opacity-70 flex flex-col flex-1 max-w-[20%] min-w-[120px]">
                 <img
+                  draggable={false}
                   src={img}
                   className="rounded-full z-10 mb-[0.5em] h-[90%] w-[90%] self-center"
                 />

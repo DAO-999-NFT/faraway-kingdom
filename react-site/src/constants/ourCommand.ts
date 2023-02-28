@@ -9,21 +9,25 @@ export const ourCommand = [
     name: 'Дмитрий',
     role: 'Creator / Ceo',
     img: Dmitry,
+    instLink: 'https://instagram.com/reactnativeru',
   },
   {
     name: 'Gaya',
     role: 'Muse / Soul',
     img: Geya,
+    instLink: 'https://instagram.com/playom',
   },
   {
     name: 'Andrey',
     role: 'Coding',
     img: Andrey,
+    instLink: 'https://instagram.com/aeroluxx',
   },
   {
     name: 'Kaya',
     role: 'SMM',
     img: Kaya,
+    instLink: 'https://instagram.com/kayaa_ko',
   },
   {
     name: 'Dr. Spider',
