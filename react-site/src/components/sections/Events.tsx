@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 
 import {ExploreCard} from 'src/components/ui/ExploreCard';
+import {roadmapData} from 'src/constants/roadmapData';
 import {
   exploreContents,
   exploreContentsItemNames,
-} from 'src/constants/contentForExploreCards';
-import {roadmapData} from 'src/constants/roadmapData';
+} from 'src/constants/сontentForExploreCards';
 
 export function EventsSection() {
   const [active, setActive] = useState<exploreContentsItemNames>('content-1');

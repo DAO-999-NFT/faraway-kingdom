@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {ourCommand} from 'src/constants/OurCommand';
+import {ourCommand} from 'src/constants/ourCommand';
 
 import footerBgImage from 'img/footerBgImage.png';
 import ApolloLogo from 'img/technology-icons/apolloLogo.svg';
