@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Бизнес-модель
 
+![DAO 999 NFT KINGDOM](https://media.discordapp.net/attachments/1010903135105060917/1079628459002839100/Server_Serverlesskiy_In_a_far_far_away_country_in_the_Kingdom_o_e1224671-2763-46f3-80e6-727ddf6f4ee4.png?width=1842&height=1228)
+
 # Вдохновение
 
 Концепция NFT загса [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) вдохновлена сочетанием современных технологий и традиционных ценностей. Она основана на идее создания уникальных цифровых активов, которые могут быть использованы для записи актов гражданского состояния, таких как свадьбы.

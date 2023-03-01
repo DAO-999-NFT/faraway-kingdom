@@ -128,8 +128,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} DAO 999 NFT. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: darkCodeTheme,
+        darkTheme: lightCodeTheme,
       },
     }),
   plugins: [
