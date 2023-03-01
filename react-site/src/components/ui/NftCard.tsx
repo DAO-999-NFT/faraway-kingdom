@@ -3,7 +3,7 @@ import React, {CSSProperties} from 'react';
 import {
   BlockchainNetData,
   BlockchainNetworks,
-} from '@site/src/constants/blockchainNetData';
+} from 'src/constants/blockchainNetData';
 
 interface NftCardProps {
   img: string;
@@ -27,7 +27,7 @@ export function NftCard({
   width = 400,
 }: NftCardProps) {
   const w = `${width}${widthSuffix}`;
-  const h = `${width / 0.72}${widthSuffix}`;
+  const h = `${width / 0.8}${widthSuffix}`;
 
   const fontSize1 = `${width / 15}${widthSuffix}`;
   const fontSize2 = `${width / 19}${widthSuffix}`;
@@ -45,7 +45,15 @@ export function NftCard({
         borderRadius: fontSize1,
       }}
       className="flex items-end relative overflow-hidden border-4 border-solid border-white ">
-      <img src={img} alt="nft" className="absolute w-full h-full" />
+      <img
+        src={img}
+        style={{
+          width: h,
+          height: h,
+        }}
+        alt="nft"
+        className="absolute object-cover"
+      />
       <div
         style={{
           height: bottomBlockH,
