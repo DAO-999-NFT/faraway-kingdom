@@ -6,6 +6,7 @@ import {Swiper, SwiperSlide, useSwiper} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import useWindowDimensions from 'src/hooks/useWindowDimensions';
+import {sliderImage} from 'src/types';
 
 import LeftIcon from 'static/img/common-icons/chevron-left.svg';
 import RightIcon from 'static/img/common-icons/chevron-right.svg';
@@ -13,7 +14,7 @@ import RightIcon from 'static/img/common-icons/chevron-right.svg';
 import {NftCard} from './NftCard';
 
 interface MainSliderProps {
-  data: string[];
+  data: sliderImage[];
 }
 
 export function MainSlider({data}: MainSliderProps) {
@@ -40,10 +41,12 @@ export function MainSlider({data}: MainSliderProps) {
         prevEl: 'swiper-button-prev',
       }}
       className="swiper mt-6 w-full">
-      {data.map(({image, name}, index) => {
+      {data.map(({image, name, link}, index) => {
         return (
           <SwiperSlide key={index} className="h-auto">
-            <div className="w-full flex flex-col items-center">
+            <div
+              onClick={link ? () => window.open(link, '_blank') : undefined}
+              className="w-full flex flex-col items-center">
               <NftCard
                 width={width > 990 ? 230 : width > 630 ? width / 4 : 190}
                 name={name}
