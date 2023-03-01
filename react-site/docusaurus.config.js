@@ -75,8 +75,13 @@ const config = {
             label: 'Docs',
           },
           {
+            href: 'https://www.instagram.com/999kingdomnft',
+            label: 'Instagram',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/DAO-999-NFT',
-            label: 'GitHub 🛰',
+            label: 'GitHub',
             position: 'left',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
@@ -108,6 +113,10 @@ const config = {
               {
                 label: 'OpenSea',
                 href: 'https://opensea.io/999kingdom',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/999kingdomnft',
               },
             ],
           },
