@@ -118,6 +118,13 @@
     line-height: 1.35em;
     font-family: 'ProximaNovaRegular';
   }
+  .large-input {
+    @apply border-[1px] text-[1.3em] text-[#FF71A7] border-[#FF82B2] bg-white rounded-[0.6em] w-full py-[0.6em] px-[1em] border-solid;
+    font-family: 'ProximaNovaRegular';
+  }
+  input.large-input::placeholder {
+    @apply text-[#FF71A7] opacity-30 text-[1.3em];
+  }
 }
 .content-container {
   font-size: 16px;

@@ -29,7 +29,6 @@ export function FooterSection() {
         <h3 className="text-white mt-[1.7em]">Команда</h3>
         <div className="flex flex-row justify-between flex-wrap">
           {ourCommand.map(({name, role, img, instLink}) => {
-            console.log('🚀 - instLink:', instLink);
             return (
               <div
                 key={name}

@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 import {WelcomeSection} from 'src/components/sections/Welcome';
 
 import {AboutSection} from '../components/sections/About';
+import {EmailFormSection} from '../components/sections/EmailForm';
 import {EventsSection} from '../components/sections/Events';
 import {ExploreSection} from '../components/sections/Explore';
 import {FooterSection} from '../components/sections/Footer';
@@ -26,6 +27,7 @@ export default function Home(): JSX.Element {
         <ExploreSection />
         <EventsSection />
         <FooterSection />
+        <EmailFormSection />
       </main>
     </Layout>
   );

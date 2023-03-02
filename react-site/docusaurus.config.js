@@ -153,6 +153,25 @@ const config = {
         },
       };
     },
+    function () {
+      return {
+        name: 'custom-docusaurus-plugin',
+        // eslint-disable-next-line
+        configureWebpack(config, isServer, utils) {
+          return {
+            resolve: {
+              fallback: {
+                url: require.resolve('url/'),
+                stream: require.resolve('stream-browserify'),
+                http: require.resolve('stream-http'),
+                https: require.resolve('https-browserify'),
+                crypto: require.resolve('crypto-browserify'),
+              },
+            },
+          };
+        },
+      };
+    },
   ],
 };
 
