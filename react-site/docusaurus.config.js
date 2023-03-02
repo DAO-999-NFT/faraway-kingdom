@@ -1,13 +1,17 @@
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const lightCodeTheme = require('prism-react-renderer/themes/github');
-
+require('dotenv').config();
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Faraway kingdom 🏰',
   tagline:
     'Метавселенная Тридевятое царство DAO - это платформа по продаже NFT билетов, управляемая владельцами 999 NFT.',
   favicon: 'img/favicon.ico',
-
+  customFields: {
+    EMAILJS_SERVICE_ID: process.env.EMAILJS_SERVICE_ID,
+    EMAILJS_TEMPLATE_ID: process.env.EMAILJS_TEMPLATE_ID,
+    EMAILJS_PUBLIC_KEY: process.env.EMAILJS_PUBLIC_KEY,
+  },
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -150,25 +154,6 @@ const config = {
           postcssOptions.plugins.push(require('tailwindcss'));
           postcssOptions.plugins.push(require('autoprefixer'));
           return postcssOptions;
-        },
-      };
-    },
-    function () {
-      return {
-        name: 'custom-docusaurus-plugin',
-        // eslint-disable-next-line
-        configureWebpack(config, isServer, utils) {
-          return {
-            resolve: {
-              fallback: {
-                url: require.resolve('url/'),
-                stream: require.resolve('stream-browserify'),
-                http: require.resolve('stream-http'),
-                https: require.resolve('https-browserify'),
-                crypto: require.resolve('crypto-browserify'),
-              },
-            },
-          };
         },
       };
     },

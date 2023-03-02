@@ -91,6 +91,9 @@
     @apply text-white cursor-pointer bg-transparent border-solid border-white py-[0.75em] px-[1.25em] border-[0.08rem] self-start text-[1.25em] rounded-full;
     font-family: 'ProximaNovaBold';
   }
+  button:disabled {
+    @apply opacity-40 cursor-default;
+  }
   .button-solid {
     @apply py-[0.75em] cursor-pointer border-none text-white px-[1.5em] opacity-90 bg-[#FF71A7] self-start text-[1.2em] rounded-full;
     font-family: 'ProximaNovaBold';

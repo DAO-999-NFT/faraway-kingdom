@@ -1,7 +1,8 @@
 import React from 'react';
 
-import {MainSlider} from '@site/src/components/ui/MainSlider';
 import {motion} from 'framer-motion';
+
+import {MainSlider} from 'src/components/ui/MainSlider';
 
 import castleL from 'img/welcome/castleL.png';
 import castleR from 'img/welcome/castleR.png';

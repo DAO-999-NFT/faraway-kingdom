@@ -12,6 +12,7 @@ import {ExploreSection} from '../components/sections/Explore';
 import {FooterSection} from '../components/sections/Footer';
 import {PosterSection} from '../components/sections/Poster';
 import {imagesData} from '../constants/sliderImagesData';
+import {EmailApiProvider} from '../utils/emailApi';
 
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
@@ -20,15 +21,17 @@ export default function Home(): JSX.Element {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <main>
-        <WelcomeSection sliderImages={imagesData} />
-        <AboutSection />
-        <PosterSection />
-        <ExploreSection />
-        <EventsSection />
-        <FooterSection />
-        <EmailFormSection />
-      </main>
+      <EmailApiProvider>
+        <main>
+          <WelcomeSection sliderImages={imagesData} />
+          <AboutSection />
+          <PosterSection />
+          <ExploreSection />
+          <EventsSection />
+          <FooterSection />
+          <EmailFormSection />
+        </main>
+      </EmailApiProvider>
     </Layout>
   );
 }
