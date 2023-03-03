@@ -11,6 +11,7 @@ const config = {
     EMAILJS_SERVICE_ID: process.env.EMAILJS_SERVICE_ID,
     EMAILJS_TEMPLATE_ID: process.env.EMAILJS_TEMPLATE_ID,
     EMAILJS_PUBLIC_KEY: process.env.EMAILJS_PUBLIC_KEY,
+    CAPTCHA_KEY: process.env.CAPTCHA_KEY,
   },
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -66,7 +67,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Home',
+        title: 'DAO 999 NFT',
         logo: {
           alt: 'Site Logo',
           src: 'img/logo.svg',

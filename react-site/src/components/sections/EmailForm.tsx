@@ -1,18 +1,25 @@
-import React, {useMemo, useState} from 'react';
+import React, {createRef, useMemo, useState} from 'react';
 
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {useEmailApi} from '@site/src/hooks';
-import {object, string} from 'yup';
+import ReCAPTCHA from 'react-google-recaptcha';
+import {boolean, object, string} from 'yup';
 
 import TriangularForEmailForm from 'img/triangularForEmailForm.svg';
 
 const emailFormSchema = object({
   name: string().required().min(2).max(40),
   email: string().required().email(),
+  captchaPassed: boolean().required().isTrue(),
 });
 
 export function EmailFormSection() {
-  const [form, setForm] = useState({email: '', name: ''});
+  const [form, setForm] = useState({email: '', name: '', captchaPassed: false});
   const emailApi = useEmailApi();
+  const captchaRef = createRef<ReCAPTCHA>();
+  const {
+    siteConfig: {customFields},
+  } = useDocusaurusContext();
 
   const onChangeEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm(pr => ({...pr, email: e.target.value}));
@@ -24,14 +31,20 @@ export function EmailFormSection() {
 
   const onSubmit = () => {
     emailApi.saveEmail(form);
-    setForm({name: '', email: ''});
+    setForm({name: '', email: '', captchaPassed: false});
+    captchaRef.current?.reset();
+  };
+  const onChangeCaptcha = () => {
+    setForm(pr => ({...pr, captchaPassed: true}));
+  };
+  const onExpiredCaptcha = () => {
+    setForm(pr => ({...pr, captchaPassed: false}));
   };
   const isValid = useMemo(() => {
     try {
       emailFormSchema.validateSync(form);
       return true;
     } catch (error) {
-      console.log('🚀 - error:', error);
       return false;
     }
   }, [form]);
@@ -58,9 +71,18 @@ export function EmailFormSection() {
               value={form.email}
               onChange={onChangeEmail}
               type="email"
-              className="large-input mb-[2em]"
+              className="large-input mb-[1em]"
               placeholder="mail@mail.com"
             />
+            <div className="flex">
+              <ReCAPTCHA
+                ref={captchaRef}
+                onExpired={onExpiredCaptcha}
+                className="ml-auto mb-[1em]"
+                sitekey={(customFields?.CAPTCHA_KEY ?? '') as string}
+                onChange={onChangeCaptcha}
+              />
+            </div>
             <button
               disabled={!isValid}
               onClick={onSubmit}
