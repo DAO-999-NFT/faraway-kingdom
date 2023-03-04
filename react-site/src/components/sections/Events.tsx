@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 
+import {translate} from '@docusaurus/Translate';
+
 import {ExploreCard} from 'src/components/ui/ExploreCard';
 import {roadmapData} from 'src/constants/roadmapData';
 import {
@@ -12,12 +14,14 @@ export function EventsSection() {
   return (
     <div className="content-container">
       <div className="text-content">
-        <h2 className="text-[#FF82B2] b-[0.5em] pt-[0.8em]">Мероприятия</h2>
-        <h3 className="text-[#FF82B2] mt-[1em]">Панган</h3>
+        <h2 className="text-[#FF82B2] b-[0.5em] pt-[0.8em]">
+          {translate({id: 'events'})}
+        </h2>
+        <h3 className="text-[#FF82B2] mt-[1em]">
+          {translate({id: 'phangan'})}
+        </h3>
         <p className="text-[#53676C] pt-[0.4em] pb-[1em]">
-          8 марта открывается продажа первых 9 NFT. Лимитированная коллекция
-          состоит из 999 NFT. Продажа первых 9 NFT откроет Тридевятое Царство на
-          территории Бали.
+          {translate({id: 'phangan 8 march'})}
         </p>
         <div className="flex flex-row basis-[33%] gap-y-[1em] mb-[4em] justify-between flex-wrap">
           {roadmapData.map(({name, img}) => {

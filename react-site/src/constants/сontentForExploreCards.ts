@@ -1,3 +1,5 @@
+import {translate} from '@docusaurus/Translate';
+
 import contentImage1 from 'img/explore-images/contentImage1.png';
 import contentImage2 from 'img/explore-images/contentImage2.png';
 import contentImage3 from 'img/explore-images/contentImage3.png';
@@ -21,26 +23,26 @@ export const exploreContents: exploreContentsItem[] = [
   {
     id: 'content-1',
     img: contentImage1,
-    content: `Коллекция стала праздником электронной музыки, и было сказано, что обладание NFT принесет коллекционеру удачу, землю в метавселенной Тридевятого Царство и управления в DAO 999 NFT  в придачу.`,
+    content: translate({id: 'explore card 1'}),
   },
   {
     id: 'content-2',
     img: contentImage2,
-    content: `И вот, было объявлено, что 8 марта в волшебном королевстве, в клубе Bluerama, начнется официальный аукцион коллекции, куда мы приглашаем вас присоединиться к нам на тропическом острове Панган и погрузиться в это с головой за белым кроликом домой.`,
+    content: translate({id: 'explore card 2'}),
   },
   {
     id: 'content-3',
     img: contentImage3,
-    content: `Итак, было сказано, что любой, кому посчастливится посетить это мероприятие, получит шанс стать первым обладателем произведения цифрового искусства и ощутить магию электронной музыки.`,
+    content: translate({id: 'explore card 3'}),
   },
   {
     id: 'content-4',
     img: contentImage4,
-    content: `Добро пожаловать в заколдованный мир метавселенной - Тридевятое Царство, где каждой частью метавселенной правит легендарная королева, изображенная на NFT.`,
+    content: translate({id: 'explore card 4'}),
   },
   {
     id: 'content-5',
     img: contentImage5,
-    content: `Присоединяйтесь к нам, пока мы воплощаем в жизнь заколдованное королевство метавселенной Тридевятого Царства и становимся частью его богатой династии клубных культурных деятелей.`,
+    content: translate({id: 'explore card 5'}),
   },
 ];

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {translate} from '@docusaurus/Translate';
+
 import {ourCommand} from 'src/constants/ourCommand';
 
 import footerBgImage from 'img/footerBgImage.png';
@@ -17,7 +19,7 @@ export function FooterSection() {
         <img src={footerBgImage} height="100%" className="absolute right-0" />
       </div>
       <div className="content-container py-[1.5em] z-[10] text-content">
-        <h3 className="text-white pb-[1em]">Technology Stack</h3>
+        <h3 className="text-white pb-[1em]">{translate({id: 'tech stack'})}</h3>
         <div className="flex flex-row flex-wrap gap-[1.25em] justify-between gap-y-[1.25em] text-white">
           <ApolloLogo className="w-[4em]" />
           <GitHubLogo className="w-[4em]" />
@@ -26,7 +28,7 @@ export function FooterSection() {
           <ReactLogo className="w-[4em]" />
           <TypescriptLogo className="w-[4em]" />
         </div>
-        <h3 className="text-white mt-[1.7em]">Команда</h3>
+        <h3 className="text-white mt-[1.7em]">{translate({id: 'team'})}</h3>
         <div className="flex flex-row justify-between flex-wrap">
           {ourCommand.map(({name, role, img, instLink}) => {
             return (

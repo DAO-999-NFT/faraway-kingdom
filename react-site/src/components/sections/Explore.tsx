@@ -1,23 +1,28 @@
 import React from 'react';
 
+import {translate} from '@docusaurus/Translate';
 import {motion} from 'framer-motion';
 
 import castleOnCloud from 'img/castleOnCloud.png';
 import TriangularGridLeftPart from 'img/triangularGridLeftPart.svg';
 
-export function ExploreSection() {
+export function ExploreSection({
+  onPressRequestAccess = () =>
+    window.open('https://t.me/serverlesskiy', '_blank'),
+}: {
+  onPressRequestAccess: () => void;
+}) {
   return (
     <section className="bg-white pt-[3em] overflow-hidden">
       <div className="content-container text-content">
-        <h3 className="text-[#FF82B2]">Тридевятое царство DAO</h3>
+        <h3 className="text-[#FF82B2]">
+          {translate({id: 'the Faraway Kingdom DAO'})}
+        </h3>
         <p className="text-[#53676C] pt-[0.4em] pb-[1em]">
-          Тридевятое царство DAO – децентрализованная автономная организация,
-          которая принимает решения на основе голосования среди держателей
-          токенов управления (Goverments token) с миссией создать метавселенную
-          Тридевятое Царство.
+          {translate({id: 'the Faraway Kingdom DAO description'})}
         </p>
         <h3 className="text-[#FF82B2] mt-[1em]">
-          Как зарабатывать в тридевятом
+          {translate({id: 'how to make money in faraway'})}
         </h3>
         <div className="flex flex-row flex-wrap gap-y-[1.25em] text-white">
           <div className="flex flex-col min-w-[100px] max-w-[50%] flex-1 mr-[0.5em]">
@@ -25,21 +30,23 @@ export function ExploreSection() {
               1
             </CircleOrderNumber>
             <p className="text-[#FF82B2]">
-              Бесплатно зарегистри-руйтесь через meta-mask
+              {translate({id: 'make money step 1'})}
             </p>
           </div>
           <div className="flex flex-col min-w-[100px] max-w-[50%] flex-1 mx-[0.5em]">
             <CircleOrderNumber bgColor="#FF82B2" textColor="white">
               2
             </CircleOrderNumber>
-            <p className="text-[#FF82B2]">Получите доступ к приложению</p>
+            <p className="text-[#FF82B2]">
+              {translate({id: 'make money step 2'})}
+            </p>
           </div>
           <div className="flex flex-col min-w-[100px] max-w-[50%] flex-1 mx-[0.5em]">
             <CircleOrderNumber bgColor="#FF82B2" textColor="white">
               3
             </CircleOrderNumber>
             <p className="text-[#FF82B2]">
-              Создавайте ивенты и загру-жайте их на платформу
+              {translate({id: 'make money step 3'})}
             </p>
           </div>
           <div className="flex flex-col min-w-[100px] max-w-[50%] flex-1 ml-[0.5em]">
@@ -47,13 +54,13 @@ export function ExploreSection() {
               4
             </CircleOrderNumber>
             <p className="text-[#FF82B2]">
-              Получайте прибыль с продажи каждого билета
+              {translate({id: 'make money step 4'})}
             </p>
           </div>
         </div>
-        <button className="button-solid self-end mt-[1em] mb-[3em]">
-          Купить NFT
-        </button>
+        {/* <button className="button-solid self-end mt-[1em] mb-[3em]">
+          {translate({id: 'buy nft'})}
+        </button> */}
       </div>
       <div className="relative">
         <motion.img
@@ -68,36 +75,41 @@ export function ExploreSection() {
         <div className="bg-gradient-3 relative overflow-hidden">
           <TriangularGridLeftPart height="100%" className="absolute" />
           <div className="content-container py-[1.5em] pb-[2em] text-content">
-            <h2 className="text-white b-[0.5em] pt-[0.8em]">Промоутерам</h2>
-            <h3 className="text-white mt-[1em]">Подключайтесь к нам</h3>
+            <h2 className="text-white b-[0.5em] pt-[0.8em]">
+              {translate({id: 'promoters'})}
+            </h2>
+            <h3 className="text-white mt-[1em]">
+              {translate({id: 'connect with us'})}
+            </h3>
             <p className="text-white pt-[0.4em] pb-[2em]">
-              Создавайте свои ивенты на нашей платформе и продавайте на них
-              билеты нашей активной аудитории клаберов со всего мира. Получайте
-              информационную поддержку от Тридевятого царства и прибыль с
-              продажи каждого билета.
+              {translate({id: 'connect with us description'})}
             </p>
 
-            <h3 className="text-white pb-[1em]">Как зарабатывать с нами:</h3>
+            <h3 className="text-white pb-[1em]">
+              {translate({id: 'how make money with us'})}
+            </h3>
             <div className="flex flex-row flex-wrap gap-y-[1.25em] text-white">
               <div className="flex flex-col min-w-[100px] max-w-[50%] flex-1 mr-[0.5em]">
                 <CircleOrderNumber textColor="#DAB7FB">1</CircleOrderNumber>
-                <p>Бесплатно зарегистри-руйтесь через meta-mask</p>
+                <p>{translate({id: 'how make money with us description 1'})}</p>
               </div>
               <div className="flex flex-col min-w-[100px] max-w-[50%] flex-1 mx-[0.5em]">
                 <CircleOrderNumber textColor="#EEA3FE">2</CircleOrderNumber>
-                <p>Получите доступ к приложению</p>
+                <p>{translate({id: 'how make money with us description 2'})}</p>
               </div>
               <div className="flex flex-col min-w-[100px] max-w-[50%] flex-1 mx-[0.5em]">
                 <CircleOrderNumber textColor="#FB97FF">3</CircleOrderNumber>
-                <p>Создавайте ивенты и загру-жайте их на платформу</p>
+                <p>{translate({id: 'how make money with us description 3'})}</p>
               </div>
               <div className="flex flex-col min-w-[100px] max-w-[50%] flex-1 ml-[0.5em]">
                 <CircleOrderNumber textColor="#FD8BE8">4</CircleOrderNumber>
-                <p>Получайте прибыль с продажи каждого билета</p>
+                <p>{translate({id: 'how make money with us description 4'})}</p>
               </div>
             </div>
-            <button className="button-outline self-end mt-[1em]">
-              Запросить доступ
+            <button
+              onClick={onPressRequestAccess}
+              className="button-outline self-end mt-[1em]">
+              {translate({id: 'request access'})}
             </button>
           </div>
         </div>

@@ -13,6 +13,19 @@ const config = {
     EMAILJS_PUBLIC_KEY: process.env.EMAILJS_PUBLIC_KEY,
     CAPTCHA_KEY: process.env.CAPTCHA_KEY,
   },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'ru'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB',
+        label: 'English',
+      },
+      ru: {
+        label: 'Русский',
+      },
+    },
+  },
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
   // Set the /<baseUrl>/ pathname under which your site is served

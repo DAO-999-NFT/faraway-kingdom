@@ -1,3 +1,5 @@
+import {translate} from '@docusaurus/Translate';
+
 import Bali from 'img/roadmap/Bali.jpg';
 import Dubai from 'img/roadmap/Dubai.jpg';
 import Ibica from 'img/roadmap/Ibica.jpg';
@@ -7,27 +9,27 @@ import Tulum from 'img/roadmap/Tulum.jpg';
 
 export const roadmapData = [
   {
-    name: 'Панган',
+    name: translate({id: 'phangan'}),
     img: Pangan,
   },
   {
-    name: 'Бали',
+    name: translate({id: 'bali'}),
     img: Bali,
   },
   {
-    name: 'Индия',
+    name: translate({id: 'india'}),
     img: India,
   },
   {
-    name: 'Дубай',
+    name: translate({id: 'dubai'}),
     img: Dubai,
   },
   {
-    name: 'Ибица',
+    name: translate({id: 'ibiza'}),
     img: Ibica,
   },
   {
-    name: 'Тулум',
+    name: translate({id: 'tulum'}),
     img: Tulum,
   },
 ];

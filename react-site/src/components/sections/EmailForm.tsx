@@ -1,5 +1,6 @@
 import React, {createRef, useMemo, useState} from 'react';
 
+import {translate} from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {useEmailApi} from '@site/src/hooks';
 import ReCAPTCHA from 'react-google-recaptcha';
@@ -59,13 +60,13 @@ export function EmailFormSection() {
                 display: 'block',
               }}
               className="text-[#FF71A7] mb-[1em] text-end self-end">
-              Обратная связь
+              {translate({id: 'feedback'})}
             </h2>
             <input
               value={form.name}
               onChange={onChangeName}
               className="large-input mb-[2em]"
-              placeholder="Name"
+              placeholder={translate({id: 'name'})}
             />
             <input
               value={form.email}
@@ -87,7 +88,7 @@ export function EmailFormSection() {
               disabled={!isValid}
               onClick={onSubmit}
               className="button-solid self-end">
-              Отправить
+              {translate({id: 'send'})}
             </button>
           </div>
         </div>

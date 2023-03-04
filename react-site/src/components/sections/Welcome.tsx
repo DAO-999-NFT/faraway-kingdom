@@ -1,5 +1,6 @@
 import React from 'react';
 
+import {translate} from '@docusaurus/Translate';
 import {motion} from 'framer-motion';
 
 import {MainSlider} from 'src/components/ui/MainSlider';
@@ -77,11 +78,18 @@ export function WelcomeSection({
         <div
           style={{fontFamily: 'ProximaNovaRegular'}}
           className="text-center text-white text-[1.2em] mt-[0.5em] mb-[1.5em]">
-          Клубная социальная NFT-платформа для покупки и<br />
-          продажи NFT-билетов
+          {translate({
+            id: 'short project description 1',
+          })}
+          <br />
+          {translate({
+            id: 'short project description 2',
+          })}
         </div>
         <button className="button-outline text-white self-center mb-[100px]">
-          Узнать больше
+          {translate({
+            id: 'know more',
+          })}
         </button>
       </div>
     </section>
