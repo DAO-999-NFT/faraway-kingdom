@@ -2,98 +2,98 @@
 sidebar_position: 2
 ---
 
-# Бизнес-модель
+# Business model
 
 ![DAO 999 NFT KINGDOM](https://media.discordapp.net/attachments/1010903135105060917/1079628459002839100/Server_Serverlesskiy_In_a_far_far_away_country_in_the_Kingdom_o_e1224671-2763-46f3-80e6-727ddf6f4ee4.png?width=1842&height=1228)
 
-# Вдохновение
+# Inspiration
 
-Концепция NFT загса [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) вдохновлена сочетанием современных технологий и традиционных ценностей. Она основана на идее создания уникальных цифровых активов, которые могут быть использованы для записи актов гражданского состояния, таких как свадьбы.
+The concept of the NFT registry office [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) is inspired by a combination of modern technologies and traditional values. It is based on the idea of creating unique digital assets that can be used to record civil status acts, such as weddings.
 
-NFT загса представляет собой цифровой загс, который управляется децентрализованной автономной организацией [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47). DAO состоит из 999 владельцев NFT, на которых изображены дворцы союза в королевском стиле. В загсе золушки становятся принцессами и заключают NFT союз с принцами на клубных балах 27 королевств.
+NFT Registry Office is a digital registry office that is managed by a decentralized autonomous organization [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47). The DAO consists of 999 NFT owners, which depict the palaces of the union in the royal style. In the registry office, cinderellas become princesses and form an NFT alliance with princes at the club balls of 27 kingdoms.
 
-Идея данного проекта возникла из желания создать новый способ записи актов гражданского состояния, используя технологии блокчейна и NFT.
+The idea of this project arose from the desire to create a new way of recording civil status acts using blockchain and NFT technologies.
 
-Концепция NFT загса [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) представляет собой сочетание традиционного и современного в искусстве, технологиях и миропорядке. Она предлагает новый способ записи актов гражданского состояния и создает уникальные цифровые активы, которые могут стать настоящими ценностями для их владельцев.
+The concept of the NFT registry office [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) is a combination of traditional and modern in art, technology and the world order. It offers a new way to record civil status acts and creates unique digital assets that can become real values for their owners.
 
-Этот проект был вдохновлен желанием продемонстрировать реальную полезность NFT.
+This project was inspired by the desire to demonstrate the real usefulness of NFT.
 
-Мы создаем способ для любого создать NFT-билеты на мероприятия и загрузить их на рынок, где все остальные могут их купить, обеспечивая при этом простой пользовательский интерфейс, доступный на мобильных устройствах.
+We are creating a way for anyone to create NFT event tickets and upload them to the marketplace where everyone else can buy them, while providing a simple user interface accessible on mobile devices.
 
-Мы создаем платформу на базе которой можно создавать мероприятия и продавать на них NFT билеты, а также создаем мобильное приложение для проверки NFT билетов на входе в клуб. Это первая функция децентрализованной клубной социальной сети DAO 999, являющаяся первым модулем в дрожной карте проекта [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47).
+We are creating a platform on the basis of which you can create events and sell NFT tickets for them, as well as create a mobile application for checking NFT tickets at the entrance to the club. This is the first function of the decentralized club social network DAO999, which is the first module in the project roadmap [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47).
 
-## Ценностные предложения:
+## Value propositions:
 
-Метавселенная [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) предлагает своим потребителям несколько уникальных ценностных предложений, в том числе:
+[DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) metaverse offers its customers several unique value propositions, including:
 
-### Потоки доходов:
+### Revenue streams:
 
-[DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) будет приносить доход за счет различных потоков, в том числе:
+[DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) it will generate income due to various flows, including:
 
-- Продажа билетов NFT и внутриигровых активов.
-- Торговля криптовалютой DAO 999.
-- Комиссии за внутриигровые транзакции.
-- Реклама и спонсорство.
+- Sale of NFT tickets and in-game assets.
+- Trading the DAO 999 cryptocurrency.
+- Fees for in-game transactions.
+- Advertising and sponsorship.
 
-## Потребительские сегменты.
+## Consumer segments.
 
-Основными потребительскими сегментами метавселенной [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) являются клаберы, промоутеры и организаторы мероприятий, которые заинтересованы во владении и торговле внутриигровыми активами, а также в уникальных и коллекционных NFT.
+The main consumer segments of the [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) metaverse There are clubbers, promoters and event organizers who are interested in owning and trading in-game assets, as well as in unique and collectible NFTs.
 
-## Ценностные предложения:
+## Value propositions:
 
-Метавселенная [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) предлагает своим потребителям несколько уникальных ценностных предложений, в том числе:
+[DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) metaverse it offers its customers several unique value propositions, including:
 
-- Полный контроль над активами с помощью NFT и технологии блокчейн.
-- Безопасная и децентрализованная платформа для торговли внутриигровыми активами и билетами NFT.
-- Возможность зарабатывать реальные деньги с помощью внутриигровых действий и обладания уникальными коллекционными билетами NFT.
-- Уникальный и захватывающий игровой процесс, в котором традиционные игровые элементы сочетаются с инновационными технологиями.
+- Full control over assets using NFC and blockchain technology.
+- A secure and decentralized platform for trading in-game assets and NFT tickets.
+- The opportunity to earn real money through in-game actions and possession of unique NFT collectible tickets.
+- A unique and exciting gameplay in which traditional game elements are combined with innovative technologies.
 
-## Каналы продаж:
+## Sales channels:
 
-Метавселенная [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) принадлежит владельцам 999 NFT и будет продаваться через онлайн оплату платформы [OpenSea](https://opensea.io/999kingdom), через партнерские отношения с клубными промоутерами. Проект также будет продвигаться с помощью кампаний цифрового маркетинга, социальных сетей и усилий по созданию сообщества.
+[DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) metaverse It belongs to the owners of 999 NFT and will be sold through the online payment platform [OpenSea](https://opensea.io/999kingdom), through partnerships with club promoters. The project will also be promoted through digital marketing companies, social media and community building efforts.
 
-## Отношения с клиентами:
+## Customer relations:
 
-Метавселенная [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) будет поддерживать тесные отношения со своими клиентами посредством регулярного общения, усилий по созданию сообщества и предоставления превосходной поддержки клиентов уровня премиального консьерж сервиса. Проект также будет регулярно собирать отзывы от своих клиентов, чтобы убедиться, что он удовлетворяет их потребности и реализует свои ценностные предложения.
+[DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) metaverse will maintain close relationships with its customers through regular communication, community building efforts and providing excellent customer support of the premium concierge service level. The project will also regularly collect feedback from its customers to ensure that it meets their needs and implements its value propositions.
 
-## Потоки доходов:
+## Revenue streams:
 
-Метавселенная [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) будет приносить доход за счет различных потоков, в том числе:
+[DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) metaverse it will generate income due to various flows, including:
 
-- Продажа NFT
-- Торговля криптовалютой [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47)
-- Комиссии за внутриигровые транзакции
-- Реклама и спонсорство
+- Sale of NFT
+- Cryptocurrency Trading [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47)
+- In-game transaction fees
+- Advertising and sponsorship
 
-## Ключевые ресурсы:
+## Key resources:
 
-Талантливая и опытная команда клубных промоутеров, разработчиков, дизайнеров и маркетологов.
-Безопасная и масштабируемая блокчейн-платформа.
-Большое и активное клубное комьюнити.
-Прочные партнерские отношения с ключевыми игроками клубного комьюнити и блокчейн-индустрии.
+A talented and experienced team of club promoters, developers, designers and marketers.
+Secure and scalable blockchain platform.
+A large and active club community.
+Strong partnerships with key players of the club community and the blockchain industry.
 
-## Ключевые мероприятия:
+## Key events:
 
-Основные мероприятия метавселенной [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) включают:
+The main activities of the [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) metaverse include:
 
-- Разработка и сопровождение геймификации платформы и создание полезного мобильного приложения и сайта.
-- Усилия по маркетингу и созданию сообщества для привлечения и удержания клиентов.
-- Постоянная разработка и внедрение новых функций и улучшений.
-- Создание и поддержание партнерских отношений с ключевыми игроками в клубной и блокчейн-индустрии.
+- Development and maintenance of platform gamification and creation of a useful mobile application and website.
+- Marketing and community building efforts to attract and retain customers.
+- Continuous development and implementation of new features and improvements.
+- Creating and maintaining partnerships with key players in the club and blockchain industry.
 
-## Ключевые партнеры:
+## Key partners:
 
-Ключевые партнеры метавселенной [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) включают:
+Key partners of the [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) metaverse include:
 
-- Клубные промоутеры и организаторы мероприятий.
-- Спонсоры и рекламодатели.
+- Club promoters and event organizers.
+- Sponsors and advertisers.
 
-## Структура затрат:
+## Cost structure:
 
-Основные затраты на проект метавселенной [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) будут включать:
+The main costs of the [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) metaverse project will include:
 
-- Затраты на разработку и сопровождение платформы и мобильного приложения.
-- Расходы на маркетинг и создание сообщества.
-- Операционные расходы, включая заработную плату и льготы для сотрудников.
-- Затраты, связанные с созданием и поддержанием партнерских отношений.
-- Затраты на соблюдение правовых и нормативных требований.
+- Costs for the development and maintenance of the platform and mobile application.
+- Expenses for marketing and community creation.
+- Operating expenses, including salaries and benefits for employees.
+- Costs associated with the creation and maintenance of partnerships.
+- Costs of compliance with legal and regulatory requirements.

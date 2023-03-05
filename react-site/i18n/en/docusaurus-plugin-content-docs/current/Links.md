@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Cсылки
+# Links
 
 <!-- ![DAO 999 NFT KINGDOM](https://media.discordapp.net/attachments/1010903135105060917/1079628459002839100/Server_Serverlesskiy_In_a_far_far_away_country_in_the_Kingdom_o_e1224671-2763-46f3-80e6-727ddf6f4ee4.png?width=1842&height=1228) -->
 
