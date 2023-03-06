@@ -29,7 +29,7 @@ export function FooterSection() {
           <TypescriptLogo className="w-[4em]" />
         </div>
         <h3 className="text-white mt-[1.7em]">{translate({id: 'team'})}</h3>
-        <div className="flex flex-row justify-between flex-wrap">
+        <div className="flex flex-row justify-around flex-wrap">
           {ourCommand.map(({name, role, img, instLink}) => {
             return (
               <div
@@ -40,11 +40,11 @@ export function FooterSection() {
                 style={{
                   cursor: instLink ? 'pointer' : 'default',
                 }}
-                className="text-center hover:opacity-90 active:opacity-70 flex flex-col flex-1 max-w-[20%] min-w-[120px]">
+                className="text-center mx-[0.25em] my-[0.5em] hover:opacity-90 active:opacity-70 flex flex-col flex-1 max-w-[14.3%] min-w-[140px]">
                 <img
                   draggable={false}
                   src={img}
-                  className="rounded-full z-10 mb-[0.5em] h-[90%] w-[90%] self-center"
+                  className="rounded-full z-10 mb-[0.5em] self-center"
                 />
                 <p
                   style={{

@@ -1,8 +1,11 @@
 import Andrey from 'img/command-avatars/Andrey.jpg';
+import Danil from 'img/command-avatars/Danil.jpeg';
 import Dmitry from 'img/command-avatars/Dmitry.jpg';
 // import DrSpider from 'img/command-avatars/DrSpider.jpg';
 import Geya from 'img/command-avatars/Geya.jpg';
 import Kaya from 'img/command-avatars/Kaya.jpg';
+import Monk from 'img/command-avatars/Monk.jpeg';
+import Vadim from 'img/command-avatars/Vadim.jpeg';
 
 export const ourCommand = [
   {
@@ -29,9 +32,22 @@ export const ourCommand = [
     img: Andrey,
     instLink: 'https://instagram.com/aeroluxx',
   },
-  // {
-  //   name: 'Dr. Spider',
-  //   role: 'Manager',
-  //   img: DrSpider,
-  // },
+  {
+    name: 'Vadim',
+    role: 'Senior developer',
+    img: Vadim,
+    instLink: 'https://t.me/Vadim_Prasolov',
+  },
+  {
+    name: 'Monk',
+    role: 'Middle developer',
+    img: Monk,
+    instLink: 'https://t.me/MONK_from_church',
+  },
+  {
+    name: 'Danil',
+    role: 'Junior developer',
+    img: Danil,
+    instLink: 'https://t.me/paranoidname',
+  },
 ];
