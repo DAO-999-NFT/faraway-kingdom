@@ -16,6 +16,7 @@ interface WelcomeSectionProps {
 export function WelcomeSection({
   sliderImages,
 }: WelcomeSectionProps): JSX.Element {
+  const onClickMore = () => {};
   return (
     <section className="bg-gradient-1 relative overflow-hidden">
       <motion.img
@@ -86,7 +87,9 @@ export function WelcomeSection({
             id: 'short project description 2',
           })}
         </div>
-        <button className="button-outline text-white self-center mb-[100px]">
+        <button
+          onClick={onClickMore}
+          className="button-outline text-white self-center mb-[100px]">
           {translate({
             id: 'know more',
           })}

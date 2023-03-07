@@ -70,7 +70,28 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/preview.jpg',
+      metadata: [
+        {
+          name: 'description',
+          content:
+            'The Faraway Kingdom is a social NFT platform for clubbers that allows you to buy and sell NFT tickets to the best parties on the planet and provide a fair pricing model for the distribution of income from the sale of NFT tickets.',
+        },
+        {property: 'og:title', content: 'DAO 999 NFT'},
+        {
+          property: 'og:description',
+          content:
+            'The Faraway Kingdom is a social NFT platform for clubbers that allows you to buy and sell NFT tickets to the best parties on the planet and provide a fair pricing model for the distribution of income from the sale of NFT tickets.',
+        },
+        {property: 'og:url', content: 'https://dao999nft.com/'},
+        {
+          property: 'og:image',
+          content: 'https://dao999nft.com/img/preview.jpg',
+        },
+        {
+          name: 'twitter:image',
+          content: 'https://dao999nft.com/img/preview.jpg',
+        },
+      ],
       navbar: {
         title: 'DAO 999 NFT',
         logo: {

@@ -94,6 +94,12 @@
   button:disabled {
     @apply opacity-40 cursor-default;
   }
+  button:hover {
+    @apply opacity-90;
+  }
+  button:active {
+    @apply opacity-70;
+  }
   .button-solid {
     @apply py-[0.75em] cursor-pointer border-none text-white px-[1.5em] opacity-90 bg-[#FF71A7] self-start text-[1.2em] rounded-full;
     font-family: 'ProximaNovaBold';
