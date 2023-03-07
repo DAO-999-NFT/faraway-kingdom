@@ -8,10 +8,11 @@ import {
 interface NftCardProps {
   img: string;
   name: string;
-  highestBid?: number;
+  cost?: number;
   owner: string;
   ownerAvatar: string;
   chain: BlockchainNetworks;
+  costCoin: string;
   width?: number;
   widthSuffix?: string;
 }
@@ -19,7 +20,8 @@ interface NftCardProps {
 export function NftCard({
   img,
   name,
-  highestBid = 100,
+  cost = 100,
+  costCoin,
   owner,
   ownerAvatar,
   chain,
@@ -30,7 +32,7 @@ export function NftCard({
   const h = `${width / 0.8}${widthSuffix}`;
 
   const fontSize1 = `${width / 15}${widthSuffix}`;
-  const fontSize2 = `${width / 19}${widthSuffix}`;
+  const fontSize2 = `${width / 20}${widthSuffix}`;
   const fontSize3 = `${width / 24}${widthSuffix}`;
   const imgSize = `${width / 8}${widthSuffix}`;
   const netLogoSize = `${width / 10}${widthSuffix}`;
@@ -73,7 +75,7 @@ export function NftCard({
           />
         </div>
         <div className="flex flex-row mt-[5%]">
-          <div className="flex flex-[0.65] flex-col h-full pl-[5%]">
+          <div className="flex flex-[0.95] flex-col h-full pl-[5%]">
             <div className="flex flex-row">
               <img
                 alt="ava"
@@ -98,7 +100,7 @@ export function NftCard({
 
                 <div
                   style={{
-                    width: '65%',
+                    width: '100%',
                     textOverflow: 'ellipsis',
                     whiteSpace: 'nowrap',
                     overflow: 'hidden',
@@ -112,7 +114,7 @@ export function NftCard({
             </div>
           </div>
           <div className="flex flex-[0.35] flex-col items-end h-full pr-[5%]">
-            {highestBid && (
+            {cost && (
               <div className="flex flex-col items-end">
                 <div
                   style={{
@@ -120,13 +122,12 @@ export function NftCard({
                     fontSize: fontSize3,
                   }}
                   className="font-neucha text-white">
-                  Highest Bid
+                  NFT Cost
                 </div>
                 <div
                   style={{fontFamily: 'ProximaNovaBlack', fontSize: fontSize2}}
                   className="text-white font-neucha">
-                  {+highestBid.toFixed(3)}{' '}
-                  {BlockchainNetData[chain].shortCoinName}
+                  {+cost.toFixed(3)} {costCoin}
                 </div>
               </div>
             )}

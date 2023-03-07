@@ -8,9 +8,9 @@ import TriangularGridLeftPart from 'img/triangularGridLeftPart.svg';
 
 export function ExploreSection({
   onPressRequestAccess = () =>
-    window.open('https://t.me/serverlesskiy', '_blank'),
+    window.open('https://megatix.in.th/white-label/nft-kingdom', '_blank'),
 }: {
-  onPressRequestAccess: () => void;
+  onPressRequestAccess?: () => void;
 }) {
   return (
     <section className="bg-white pt-[3em] overflow-hidden">

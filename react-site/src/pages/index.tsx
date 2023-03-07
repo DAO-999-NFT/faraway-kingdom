@@ -21,6 +21,10 @@ export default function Home(): JSX.Element {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
+      <script
+        defer
+        async
+        src="https://megatix.in.th/js/widgets/megatix.js"></script>
       <EmailApiProvider>
         <main>
           <WelcomeSection sliderImages={imagesData} />

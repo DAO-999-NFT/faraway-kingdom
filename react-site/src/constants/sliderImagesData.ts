@@ -2,93 +2,57 @@ import {sliderImage} from 'src/types';
 
 export const imagesData: sliderImage[] = [
   {
-    name: 'WoWG #16204',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/16204',
+    name: '001',
+    link: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/4779901461043521251650643766164585910345101587726362605061919737283187048449',
     image:
-      'https://ipfs.io/ipfs/QmV2jGFvWqPhtyhaEca5LTrhuWhfkKZ3Qo9sZutDr5FCZv',
+      'https://i.seadn.io/gcs/files/da95e32926e67933bea3d027202112f3.png?auto=format&w=1000',
   },
   {
-    name: 'WoWG #5828',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/5828',
+    name: '002',
+    link: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/4779901461043521251650643766164585910345101587726362605061919728487094026241',
     image:
-      'https://ipfs.io/ipfs/QmPdS54yCRDCAJFHsWXHLZtSDM5ricmbZ6t6tg7CyhmVHS',
+      'https://i.seadn.io/gcs/files/28855a3aac9c751aaffee751934a7f57.png?auto=format&w=1000',
   },
   {
-    name: 'WoWG #6353',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/6353',
+    name: '003',
+    link: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/4779901461043521251650643766164585910345101587726362605061919729586605654017',
     image:
-      'https://ipfs.io/ipfs/QmXJtqWeTGRyq69wfiiTWqwJZEa8XnHMPmwj97SXgnZvLr',
+      'https://i.seadn.io/gcs/files/7a8fd2e4e9be7ce98577b558f85f37b9.png?auto=format&w=1000',
   },
   {
-    name: 'WoWG #10721',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/10721',
+    name: '004',
+    link: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/4779901461043521251650643766164585910345101587726362605061919730686117281793',
     image:
-      'https://ipfs.io/ipfs/QmWX3NSk8MGASmf4Q4V5B2GcXVwtjD6i4sqComz63iwyYg',
+      'https://i.seadn.io/gcs/files/779e38e22778d6963e2d9b6641c79053.png?auto=format&w=1000',
   },
   {
-    name: 'WoWG #15383',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/15383',
+    name: '005',
+    link: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/4779901461043521251650643766164585910345101587726362605061919731785628909569',
     image:
-      'https://ipfs.io/ipfs/QmXeDK8Z5PS8UmaqmBrGejmnMomE6MEyDRoWiPKQ1LVB7P',
+      'https://i.seadn.io/gcs/files/b33989ecd95691e33f1aab9e61ee81f5.png?auto=format&w=1000',
   },
   {
-    name: 'WoWG #4833',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/4833',
+    name: '006',
+    link: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/4779901461043521251650643766164585910345101587726362605061919732885140537345',
     image:
-      'https://ipfs.io/ipfs/QmYNpobiQeUY95t191xZq1vpDEkpSjdoD1JDBiPE2kFsYJ',
+      'https://i.seadn.io/gcs/files/3f9399e88023e3a659c25808b1131c5e.png?auto=format&w=1000',
   },
   {
-    name: 'WoWG #13791',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/13791',
+    name: '007',
+    link: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/4779901461043521251650643766164585910345101587726362605061919733984652165121',
     image:
-      'https://ipfs.io/ipfs/Qmah6tvyDEonrEXSiF2FTBgVqmvxzeA5hqhLuzcZM9o3mC',
+      'https://i.seadn.io/gcs/files/37bd4da70add1a01911a113635061135.png?auto=format&w=1000',
   },
   {
-    name: 'WoWG #13501',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/13501',
+    name: '008',
+    link: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/4779901461043521251650643766164585910345101587726362605061919735084163792897',
     image:
-      'https://ipfs.io/ipfs/QmTyeM9Tjuzs6HJXqHSNd9g6SeULdYw7NWG5sTkyihrQHC',
+      'https://i.seadn.io/gcs/files/c9383a188b83720e8d7a1ff4a4ac7941.png?auto=format&w=1000',
   },
   {
-    name: 'WoWG #5601',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/5601',
+    name: '009',
+    link: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/4779901461043521251650643766164585910345101587726362605061919736183675420673',
     image:
-      'https://ipfs.io/ipfs/QmaC5Y2Yw5KdNL9es8c2Ft3q2wVp6Y4ocucqBH7Td7Dtm4',
-  },
-  {
-    name: 'WoWG #16400',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/16400',
-    image:
-      'https://ipfs.io/ipfs/QmbtvzuwRuXaTk9UF873vmjLVnM2a7Yq6rMcrsnBF9p3pW',
-  },
-  {
-    name: 'WoWG #2977',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/2977',
-    image:
-      'https://ipfs.io/ipfs/QmexdMNiaSvdV2KDvq4EbN2H5Vfmm5p9Kyz9GUy9n3CKEK',
-  },
-  {
-    name: 'WoWG #16583',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/16583',
-    image:
-      'https://ipfs.io/ipfs/QmQxbgWeKVoETNMNuHJwchko1fg4r43PcgP8LuUDdjNLan',
-  },
-  {
-    name: 'WoWG #1915',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/1915',
-    image:
-      'https://ipfs.io/ipfs/QmZc2JLvYLN71WeVR9P5YGMsPup84914UcNV3xsJVtUyKL',
-  },
-  {
-    name: 'WoWG #3544',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/3544',
-    image:
-      'https://ipfs.io/ipfs/QmScfEjvbMoxJjsvGWUtR1cAq7LfDQY1AXkZ4Q8W84kgrx',
-  },
-  {
-    name: 'WoWG #20681',
-    link: 'https://opensea.io/assets/ethereum/0xf61f24c2d93bf2de187546b14425bf631f28d6dc/20681',
-    image:
-      'https://ipfs.io/ipfs/QmRR123Hp6RECsDELcu1iXi6HFBvtJrcr4jaY6q9WthbmZ',
+      'https://i.seadn.io/gcs/files/68093e41cc07765d2645dabe6facc231.png?auto=format&w=1000',
   },
 ];

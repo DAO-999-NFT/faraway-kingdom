@@ -27,7 +27,7 @@ export function MainSlider({data}: MainSliderProps) {
       centeredSlides
       modules={[EffectCoverflow, Scrollbar]}
       loop
-      slidesPerView={width > 990 ? 5 : width > 630 ? 5 : 3}
+      slidesPerView={width > 990 ? 4 : width > 630 ? 4 : 2}
       coverflowEffect={{
         slideShadows: false,
         rotate: 20,
@@ -50,9 +50,11 @@ export function MainSlider({data}: MainSliderProps) {
               <NftCard
                 width={width > 990 ? 230 : width > 630 ? width / 4 : 190}
                 name={name}
-                chain="etherium"
-                ownerAvatar="https://i.seadn.io/gae/hP4JJhiY5yXu1mCvNycTke2O_xbtgIFfkLTjfT7C9TNKinkGpP2COikt7cwn0xqzoATRNC21wsiwy_Fe-MQ3PPTgRjkbbCfJf__L?auto=format&w=512"
-                owner="Worlds of Women Galaxy"
+                cost={1}
+                chain="polygon"
+                costCoin="ETH"
+                ownerAvatar="https://i.seadn.io/gcs/files/5f94dacc62f23cf46e10e120b4a3d672.png?auto=format&w=384"
+                owner={'Thailand Kingdom'.slice(0, 18)}
                 img={image}
               />
             </div>
