@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Link from '@docusaurus/Link';
 import {translate} from '@docusaurus/Translate';
 import {motion} from 'framer-motion';
 
@@ -87,13 +88,13 @@ export function WelcomeSection({
             id: 'short project description 2',
           })}
         </div>
-        <button
-          onClick={onClickMore}
-          className="button-outline text-white self-center mb-[100px]">
+        <Link
+          className="button-outline text-white self-center mb-[100px]"
+          to="docs/intro">
           {translate({
             id: 'know more',
           })}
-        </button>
+        </Link>
       </div>
     </section>
   );
