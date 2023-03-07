@@ -5,6 +5,8 @@ import {
   BlockchainNetworks,
 } from 'src/constants/blockchainNetData';
 
+import SoldOutIcon from 'img/SoldOut.png';
+
 interface NftCardProps {
   img: string;
   name: string;
@@ -15,6 +17,7 @@ interface NftCardProps {
   costCoin: string;
   width?: number;
   widthSuffix?: string;
+  isSoldOut?: boolean;
 }
 
 export function NftCard({
@@ -27,6 +30,7 @@ export function NftCard({
   chain,
   widthSuffix = 'px',
   width = 400,
+  isSoldOut,
 }: NftCardProps) {
   const w = `${width}${widthSuffix}`;
   const h = `${width / 0.8}${widthSuffix}`;
@@ -46,7 +50,7 @@ export function NftCard({
         height: h,
         borderRadius: fontSize1,
       }}
-      className="flex items-end relative overflow-hidden border-4 border-solid border-white ">
+      className="flex items-end relative overflow-hidden border-4 border-solid border-white">
       <img
         src={img}
         style={{
@@ -114,7 +118,20 @@ export function NftCard({
             </div>
           </div>
           <div className="flex flex-[0.35] flex-col items-end h-full pr-[5%]">
-            {cost && (
+            {isSoldOut && (
+              <div className="flex flex-1 items-end justify-end">
+                <img
+                  src={SoldOutIcon}
+                  style={{
+                    width: 30,
+                    height: 23.35,
+                  }}
+                  alt="nft"
+                  className="mb-[0.4em]"
+                />
+              </div>
+            )}
+            {cost && !isSoldOut && (
               <div className="flex flex-col items-end">
                 <div
                   style={{

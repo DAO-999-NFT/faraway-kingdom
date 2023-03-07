@@ -6,6 +6,7 @@ export const imagesData: sliderImage[] = [
     link: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/4779901461043521251650643766164585910345101587726362605061919737283187048449',
     image:
       'https://i.seadn.io/gcs/files/da95e32926e67933bea3d027202112f3.png?auto=format&w=1000',
+    isSoldOut: true,
   },
   {
     name: '002',

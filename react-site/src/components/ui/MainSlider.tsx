@@ -41,7 +41,7 @@ export function MainSlider({data}: MainSliderProps) {
         prevEl: 'swiper-button-prev',
       }}
       className="swiper mt-6 w-full">
-      {data.map(({image, name, link}, index) => {
+      {data.map(({image, name, link, isSoldOut}, index) => {
         return (
           <SwiperSlide key={index} className="h-auto">
             <div
@@ -53,6 +53,7 @@ export function MainSlider({data}: MainSliderProps) {
                 cost={1}
                 chain="polygon"
                 costCoin="ETH"
+                isSoldOut={isSoldOut}
                 ownerAvatar="https://i.seadn.io/gcs/files/5f94dacc62f23cf46e10e120b4a3d672.png?auto=format&w=384"
                 owner={'Thailand Kingdom'.slice(0, 18)}
                 img={image}
