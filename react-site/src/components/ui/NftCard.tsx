@@ -41,7 +41,7 @@ export function NftCard({
   const imgSize = `${width / 8}${widthSuffix}`;
   const netLogoSize = `${width / 10}${widthSuffix}`;
 
-  const bottomBlockH = `${width / 2.5}${widthSuffix}`;
+  const bottomBlockH = `${width / 2.6}${widthSuffix}`;
   const NetworkLogo = BlockchainNetData[chain].logo;
   return (
     <div
@@ -60,6 +60,19 @@ export function NftCard({
         alt="nft"
         className="absolute object-cover"
       />
+      {isSoldOut && (
+        <div className="flex flex-1 items-end justify-end">
+          <img
+            src={SoldOutIcon}
+            style={{
+              width: '2.8em',
+              height: '2.17em',
+            }}
+            alt="nft"
+            className="absolute top-[0.5em] right-[0.5em]"
+          />
+        </div>
+      )}
       <div
         style={{
           height: bottomBlockH,
@@ -99,9 +112,8 @@ export function NftCard({
                     fontSize: fontSize3,
                   }}
                   className="text-white">
-                  Creator
+                  Collection
                 </div>
-
                 <div
                   style={{
                     width: '100%',
@@ -110,6 +122,7 @@ export function NftCard({
                     overflow: 'hidden',
                     fontFamily: 'ProximaNovaBold',
                     fontSize: fontSize2,
+                    transform: 'translate(0, -3px)',
                   }}
                   className="text-white">
                   {owner}
@@ -118,20 +131,7 @@ export function NftCard({
             </div>
           </div>
           <div className="flex flex-[0.35] flex-col items-end h-full pr-[5%]">
-            {isSoldOut && (
-              <div className="flex flex-1 items-end justify-end">
-                <img
-                  src={SoldOutIcon}
-                  style={{
-                    width: 30,
-                    height: 23.35,
-                  }}
-                  alt="nft"
-                  className="mb-[0.4em]"
-                />
-              </div>
-            )}
-            {cost && !isSoldOut && (
+            {cost && (
               <div className="flex flex-col items-end">
                 <div
                   style={{
@@ -142,7 +142,11 @@ export function NftCard({
                   NFT Cost
                 </div>
                 <div
-                  style={{fontFamily: 'ProximaNovaBlack', fontSize: fontSize2}}
+                  style={{
+                    fontFamily: 'ProximaNovaBlack',
+                    transform: 'translate(0, -3px)',
+                    fontSize: fontSize2,
+                  }}
                   className="text-white font-neucha">
                   {+cost.toFixed(3)} {costCoin}
                 </div>
