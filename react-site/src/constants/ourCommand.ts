@@ -48,6 +48,6 @@ export const ourCommand = [
     name: 'Danil',
     role: 'Junior developer',
     img: Danil,
-    instLink: 'https://t.me/paranoidname',
+    instLink: 'https://t.me/empereur15',
   },
 ];
