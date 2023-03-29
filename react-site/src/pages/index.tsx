@@ -10,7 +10,7 @@ import {EmailFormSection} from '../components/sections/EmailForm';
 import {EventsSection} from '../components/sections/Events';
 import {ExploreSection} from '../components/sections/Explore';
 import {FooterSection} from '../components/sections/Footer';
-import {GallerySection} from '../components/sections/Gallery';
+// import {GallerySection} from '../components/sections/Gallery';
 import {PosterSection} from '../components/sections/Poster';
 import {imagesData} from '../constants/sliderImagesData';
 import {EmailApiProvider} from '../utils/emailApi';
@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
           <PosterSection />
           <ExploreSection />
           <EventsSection />
-          <GallerySection />
+          {/* <GallerySection /> */}
           <FooterSection />
           <EmailFormSection />
         </main>
