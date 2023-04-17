@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {translate} from '@docusaurus/Translate';
+import useWindowDimensions from '@site/src/hooks/useWindowDimensions';
 import {motion} from 'framer-motion';
 
 import castleOnCloud from 'img/castleOnCloud.png';
@@ -12,9 +13,21 @@ export function ExploreSection({
 }: {
   onPressRequestAccess?: () => void;
 }) {
+  const {width} = useWindowDimensions();
   return (
     <section className="bg-white pt-[3em] overflow-hidden">
       <div className="content-container text-content">
+        <h3
+          style={{fontFamily: 'Montserrat Alternates'}}
+          className="font-bold text-[1.7em] text-[#FF71A7] mb-[0.6em] mt-[1em] opacity-90">
+          {translate({id: 'what is our project about'})}
+        </h3>
+        <p
+          style={{fontFamily: 'ProximaNovaRegular'}}
+          className="text-[#53676C] font-[1em] pb-[2.5em]">
+          {translate({id: 'faraway kingdom is'})}
+        </p>
+
         <h3 className="text-[#FF82B2]">
           {translate({id: 'the Faraway Kingdom DAO'})}
         </h3>
@@ -58,9 +71,29 @@ export function ExploreSection({
             </p>
           </div>
         </div>
-        {/* <button className="button-solid self-end mt-[1em] mb-[3em]">
+        <button className="button-solid self-end mt-[1em] mb-[3em]">
           {translate({id: 'buy nft'})}
-        </button> */}
+        </button>
+
+        {/* {width > 450 ? (
+          <div className="flex flex-row">
+            <h3 className="flex flex-1 mb-[0.2em] text-[#FF71A7] opacity-90">
+              {translate({id: 'earn money on our platform by investing'})}
+            </h3>
+            <button className="button-solid self-center">
+              {translate({id: 'buy nft'})}
+            </button>
+          </div>
+        ) : (
+          <>
+            <h3 className="mb-[0.2em] text-[#FF71A7] opacity-90">
+              {translate({id: 'earn money on our platform by investing'})}
+            </h3>
+            <button className="button-solid mt-[0.4em]">
+              {translate({id: 'buy nft'})}
+            </button>
+          </>
+        )} */}
       </div>
       <div className="relative">
         <motion.img
@@ -72,7 +105,7 @@ export function ExploreSection({
           src={castleOnCloud}
         />
 
-        <div className="bg-gradient-3 relative overflow-hidden">
+        {/* <div className="bg-gradient-3 relative overflow-hidden">
           <TriangularGridLeftPart height="100%" className="absolute" />
           <div className="content-container py-[1.5em] pb-[2em] text-content">
             <h2 className="text-white b-[0.5em] pt-[0.8em]">
@@ -112,7 +145,7 @@ export function ExploreSection({
               {translate({id: 'request access'})}
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

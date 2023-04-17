@@ -22,31 +22,31 @@ export function AboutSection() {
             className="text-[#53676C] font-[1em] pb-[2.5em]">
             {translate({id: 'faraway kingdom is'})}
           </p>
-          <h3
+          {/* <h3
             style={{fontFamily: 'Montserrat Alternates'}}
             className="font-bold text-[1.7em] mb-[0.6em] text-[#FF71A7] opacity-90">
             {translate({id: 'what we do'})}
           </h3>
           <p className="text-[#53676C] pb-[2.5em]">
             {translate({id: 'what we do description'})}
-          </p>
+          </p> */}
           {width > 450 ? (
             <div className="flex flex-row">
               <h3 className="flex flex-1 mb-[0.2em] text-[#FF71A7] opacity-90">
                 {translate({id: 'earn money on our platform by investing'})}
               </h3>
-              {/* <button className="button-solid self-center">
+              <button className="button-solid self-center">
                 {translate({id: 'buy nft'})}
-              </button> */}
+              </button>
             </div>
           ) : (
             <>
               <h3 className="mb-[0.2em] text-[#FF71A7] opacity-90">
                 {translate({id: 'earn money on our platform by investing'})}
               </h3>
-              {/* <button className="button-solid mt-[0.4em]">
+              <button className="button-solid mt-[0.4em]">
                 {translate({id: 'buy nft'})}
-              </button> */}
+              </button>
             </>
           )}
         </div>
