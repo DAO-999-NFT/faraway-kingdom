@@ -17,9 +17,9 @@ export function EventsSection() {
         <h2 className="text-[#FF82B2] b-[0.5em] pt-[0.8em]">
           {translate({id: 'events'})}
         </h2>
-        <h3 className="text-[#FF82B2] mt-[1em]">
+        {/* <h3 className="text-[#FF82B2] mt-[1em]">
           {translate({id: 'phangan'})}
-        </h3>
+        </h3> */}
         <p className="text-[#53676C] pt-[0.4em] pb-[1em]">
           {translate({id: 'phangan 8 march'})}
         </p>
