@@ -50,12 +50,12 @@ export function MainSlider({data}: MainSliderProps) {
               <NftCard
                 width={width > 990 ? 230 : width > 630 ? width / 4 : 190}
                 name={name}
-                cost={1}
+                cost={0.05}
                 chain="polygon"
                 costCoin="ETH"
                 isSoldOut={isSoldOut}
                 ownerAvatar="https://i.seadn.io/gcs/files/5f94dacc62f23cf46e10e120b4a3d672.png?auto=format&w=384"
-                owner={'Thailand Kingdom'.slice(0, 18)}
+                owner={'DAO999NFT'.slice(0, 18)}
                 img={image}
               />
             </div>

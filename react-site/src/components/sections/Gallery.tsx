@@ -14,7 +14,7 @@ export function GallerySection() {
             showBullets={false}
             showNavs={true}
             images={imagesData}
-            style={{alignSelf: 'center'}}
+            style={{alignSelf: 'center', maxWidth: '90%'}}
           />
         </div>
       </section>
