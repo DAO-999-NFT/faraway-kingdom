@@ -6,7 +6,7 @@ sidebar_label: About us
 
 import YouTube from 'react-youtube'
 
-<YouTube videoId="z5gO1PzyLwU" />
+<YouTube videoId="mEwfJaM22ss" />
 
 # Introduction
 
