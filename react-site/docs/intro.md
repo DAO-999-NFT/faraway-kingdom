@@ -4,6 +4,10 @@ title: Intro
 sidebar_label: About us
 ---
 
+import YouTube from 'react-youtube'
+
+<YouTube videoId="z5gO1PzyLwU" />
+
 # Introduction
 
 The Web 3 training course in Russian in images from Russian folk tales was created to help Russian-speaking citizens who are abroad and need to adapt to the new world system. The course is intended for those who want to learn Web 3.0 technologies, blockchain, cryptocurrencies and other aspects of decentralized systems.
