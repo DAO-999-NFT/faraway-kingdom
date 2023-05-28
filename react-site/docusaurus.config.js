@@ -146,11 +146,27 @@ const config = {
               },
               {
                 label: 'OpenSea',
-                href: 'https://opensea.io/999kingdom',
+                href: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/4779901461043521251650643766164585910345101587726362605061919731785628910567',
               },
               {
                 label: 'Instagram',
                 href: 'https://www.instagram.com/999kingdomnft',
+              },
+              {
+                label: 'Link3',
+                href: 'https://link3.to/CCN4QUIH',
+              },
+              {
+                label: 'YouTube',
+                href: 'https://www.youtube.com/@dao999nft',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://instagram.com/dao999nft',
+              },
+              {
+                label: 'Vk',
+                href: 'https://vk.com/dao999nft',
               },
             ],
           },
