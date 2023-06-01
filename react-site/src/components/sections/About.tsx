@@ -35,18 +35,26 @@ export function AboutSection() {
               <h3 className="flex flex-1 mb-[0.2em] text-[#FF71A7] opacity-90">
                 {translate({id: 'earn money on our platform by investing'})}
               </h3>
-              <button className="button-solid self-center">
-                {translate({id: 'buy nft'})}
-              </button>
+              <a
+                href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/4779901461043521251650643766164585910345101587726362605061919731785628910567"
+                target="_blank">
+                <button className="button-solid self-center">
+                  {translate({id: 'buy nft'})}
+                </button>
+              </a>
             </div>
           ) : (
             <>
               <h3 className="mb-[0.2em] text-[#FF71A7] opacity-90">
                 {translate({id: 'earn money on our platform by investing'})}
               </h3>
-              <button className="button-solid mt-[0.4em]">
-                {translate({id: 'buy nft'})}
-              </button>
+              <a
+                href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/4779901461043521251650643766164585910345101587726362605061919731785628910567"
+                target="_blank">
+                <button className="button-solid mt-[0.4em]">
+                  {translate({id: 'buy nft'})}
+                </button>
+              </a>
             </>
           )}
         </div>

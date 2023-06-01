@@ -71,9 +71,13 @@ export function ExploreSection({
             </p>
           </div>
         </div>
-        <button className="button-solid self-end mt-[1em] mb-[3em]">
-          {translate({id: 'buy nft'})}
-        </button>
+        <a
+          href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/4779901461043521251650643766164585910345101587726362605061919731785628910567"
+          target="_blank">
+          <button className="button-solid self-end mt-[1em] mb-[3em]">
+            {translate({id: 'buy nft'})}
+          </button>
+        </a>
 
         {/* {width > 450 ? (
           <div className="flex flex-row">
