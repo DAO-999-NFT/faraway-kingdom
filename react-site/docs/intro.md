@@ -10,13 +10,13 @@ import YouTube from 'react-youtube'
 
 # Introduction
 
-The Web 3 training course in Russian in images from Russian folk tales was created to help Russian-speaking citizens who are abroad and need to adapt to the new world system. The course is intended for those who want to learn Web 3.0 technologies, blockchain, cryptocurrencies and other aspects of decentralized systems.
+The Web 3 training course inspired by folk tales was created to help citizens who are abroad and need to adapt to the new world system. The course is intended for those who want to learn Web 3.0 technologies, blockchain, cryptocurrencies and other aspects of decentralized systems.
 
-A feature of our course is the use of images from Russian folk tales that are understandable to the Russian population to explain the complex concepts of Web 3.0. We believe that this will help students more easily understand technologies that may seem complex and incomprehensible.
+A feature of our course is the use of understandable images from folk tales to explain the complex concepts of Web 3.0. We believe that this will help students more easily understand technologies that may seem complex and incomprehensible.
 
-The course will be divided into different modules, each of which will contain lectures, exercises and assignments. We will also provide additional materials and resources for students to further explore topics that interest them.
+The course will be divided into different modules, each of which will contain lectures, exercises and assignments. We will also provide students with materials and resources to further explore topics that interest them.
 
-To create the course, we have recruited a team of Web 3.0 and blockchain experts who have in-depth knowledge and experience in this area. We also plan to hold additional events such as webinars and online courses for members who wish to receive additional support and assistance.
+To create the course, we have recruited a team of Web 3.0 and blockchain experts who have in-depth knowledge and experience in this area. We also plan to hold events, webinars and online courses for participants who want to get support and help.
 
 Our goal is to help our students learn new technologies and adapt to a changing world system using materials that are understandable and accessible.
 
