@@ -50,7 +50,7 @@ export function MainSlider({data}: MainSliderProps) {
               <NftCard
                 width={width > 990 ? 230 : width > 630 ? width / 4 : 190}
                 name={name}
-                cost={0.05}
+                cost={1}
                 chain="polygon"
                 costCoin="ETH"
                 isSoldOut={isSoldOut}
