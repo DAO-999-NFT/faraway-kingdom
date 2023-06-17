@@ -204,6 +204,7 @@ const config = {
       };
     },
   ],
+  scripts: ['/custom.js'],
 };
 
 module.exports = config;
