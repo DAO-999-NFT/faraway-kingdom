@@ -6,6 +6,7 @@ import Geya from 'img/command-avatars/Geya.jpg';
 import Kaya from 'img/command-avatars/Kaya.jpg';
 import Monk from 'img/command-avatars/Monk.jpeg';
 import Vadim from 'img/command-avatars/Vadim.jpeg';
+import Ivan from 'img/command-avatars/Ivan.jpg';
 
 export const ourCommand = [
   {
@@ -49,5 +50,11 @@ export const ourCommand = [
     role: 'Junior developer',
     img: Danil,
     instLink: 'https://t.me/empereur15',
+  },
+  {
+    name: 'Ivan',
+    role: 'Video maker / Editor',
+    img: Ivan,
+    instLink: 'https://t.me/jelat1n',
   },
 ];
