@@ -4,8 +4,7 @@ require('dotenv').config();
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Faraway kingdom 🏰',
-  tagline:
-    'Метавселенная Тридевятое царство DAO - это платформа по продаже NFT билетов, управляемая владельцами 999 NFT.',
+  tagline: 'Metaverse Far Far Away DAO 999 NFT',
   favicon: 'img/favicon.ico',
   customFields: {
     EMAILJS_SERVICE_ID: process.env.EMAILJS_SERVICE_ID,

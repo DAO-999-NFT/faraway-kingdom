@@ -12,6 +12,7 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "start:ru": "yarn run start --locale ru",
+    "start:en": "yarn run start --locale en",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
