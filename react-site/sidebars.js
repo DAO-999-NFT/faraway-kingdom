@@ -6,5 +6,6 @@ module.exports = {
     ['Web3']: ['web3/1', 'web3/2'],
     ['Ambassadors']: ['ambassadors/1', 'ambassadors/2'],
     ['Investors']: ['investors/1'],
+    ['Links']: ['Links'],
   },
 };
