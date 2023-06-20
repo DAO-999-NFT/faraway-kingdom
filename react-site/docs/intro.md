@@ -21,9 +21,7 @@ Yes, each **Far Far Away** gold ring is not only a unique piece of jewelry, but 
 When you purchase a **Far Far Away** ring, you not only become the owner of a beautiful gold piece of jewelry, but also a digital asset that grants you access to your own royal land in the blockchain world.
 
 :::info
-
 It's like a key to a magical chest, which contains additional features and treasures.
-
 :::
 
 On your royal land, you will be able to participate in the management of the **Far Far Away** Kingdom, make decisions, vote and influence the development of this amazing world. You will have access to unique features, offers and benefits that add value and functionality to your ring ownership.
@@ -33,9 +31,7 @@ So don't miss your chance to enter **Far Far Away** and become king or queen of 
 **Far Far Away** rings are unique and cannot be counterfeited thanks to the use of blockchain technology. Each ring has its own unique digital footprint in the form of **NFT**, which is recorded and stored on the Ethereum blockchain. This provides transparency and authenticity, allowing you to be confident in the uniqueness of your asset.
 
 :::info
-
 Each of these rings is a real masterpiece of craft! What makes them truly unique are the two magical pieces woven together like the links of a miniature machine. The inner part easily spins around the base, as if creating an invisible connection between the worlds.
-
 :::
 
 Each two-piece gold ring of **Far Far Away** is a true miracle of technology and a mystery contained in brilliant gold. It reminds us of the power and the beautiful combination of goldsmithing tradition and the innovative ideas of cryptocurrencies and **NFT**. It is like a magical fusion of the past and the future, where the splendor of gold is intertwined with technological possibilities.
@@ -65,7 +61,7 @@ This whole package allows you to combine real and digital assets, creating a uni
 
 ## Is it really a valuable investment?
 
-Definitely one of the most unique investment opportunities today. Gold has always been a stable asset and **NFT** is rapidly gaining popularity as a form of digital art and value. With Far Far Away\*\* you get the best of both worlds.
+Definitely one of the most unique investment opportunities today. Gold has always been a stable asset and **NFT** is rapidly gaining popularity as a form of digital art and value. With **Far Far Away** you get the best of both worlds.
 
 ![golden_ring](/img/intro/golden_rings1.png)
 
@@ -89,7 +85,7 @@ Now is the perfect time, as the price of the **Far Far Away** gold ring automati
 
 Gold, as a precious metal, has always been one of the most reliable assets for centuries. Investing in gold is a strategic step to preserve and increase your capital.
 
-::: note
+:::note
 Far Far Away offers a combination of a real gold ring and a digital asset, giving you a unique opportunity to combine the two worlds.
 :::
 
@@ -260,7 +256,7 @@ With each full moon, your **Far Far Away** golden ring becomes more and more val
 Combining real gold and digital assets, we offer you the aesthetic pleasure of wearing an exquisite double gold ring. Don't miss your chance to experience this double effect and be part of this unique offer!
 Enjoy a taste of luxury with **Far Far Away**. Shop now and join a community that is actively shaping the future!
 
-[![dao999nft](/img/ui/button-ru.png)](https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/4779901461043521251650643766164585910345101587726362605061919731785628910567)
+[![dao999nft](/img/ui/button-en.png)](https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/4779901461043521251650643766164585910345101587726362605061919731785628910567)
 
 <!-- ![DAO 999 NFT KINGDOM](https://cdn.discordapp.com/attachments/1010903135105060917/1079628144161607680/Server_Serverlesskiy_In_a_far_far_away_country_in_the_Kingdom_o_f6acfe6a-40bf-4abc-9393-c32d9c45f70f.png?width=1842&height=1228)
 
