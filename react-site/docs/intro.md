@@ -384,7 +384,7 @@ The main costs of the metaverse project [DAO 999 NFT](https://www.xdao.app/137/d
 
 ## Project author
 
-The author of the **Far Far Away** project - [Dmitry Vasiliev](bit.ly/cv_vasilev_dmitrii) - is a well-known specialist in his field, recognized for his contribution to the development of the technology community and possessing a number of important skills and experience.
+The author of the **Far Far Away** project - [Dmitry Vasiliev](https://www.bit.ly/cv_vasilev_dmitrii) - is a well-known specialist in his field, recognized for his contribution to the development of the technology community and possessing a number of important skills and experience.
 
 **Expert in React Native and AWS Amplify**
 The author is the creator of the first React Native and AWS Amplify course on Runet and a member of Amazon's AWS Community Builders program.
