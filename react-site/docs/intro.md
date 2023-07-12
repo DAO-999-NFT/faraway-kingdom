@@ -6,9 +6,9 @@ sidebar_label: About us
 
 ## Introduction
 
-In Far Far Away, the magic of fairy tales becomes reality. This is the space where **Cinderella** will turn into a princess. A fairy tale has become a reality in the digital age. In the **Miss Blockchain** beauty contest, each contestant who passes the casting will receive a **Cinderella's NFT shoe** - a symbol of hope, transformation and the beginning of a new life.
+In **Far Far Away**, the magic of fairy tales becomes reality. This is the space where **Cinderella** will turn into a princess. The fairy tale will come true in the digital age in the **Miss Blockchain** beauty contest, where each participant will receive a **Cinderella's NFT shoe** - a symbol of hope, transformation and the beginning of a new life.
 
-Thus begins the path to greatness, during which they can become one of the 999 princesses that will be elected every year, one at a time, for 999 years. And one day the princess will become queen by making an alliance in the smart contract **NFT** of the registry office of **Far Far Away**.
+Thus begins the path to greatness, during which they can become one of the **999** princesses that will be elected every year, one at a time, for **999** years. And one day the princess will become queen by making an alliance in the smart contract **NFT** of the registry office of **Far Far Away**.
 
 The digital registry office operated by the Decentralized Autonomous Organization [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) is inspired by the combination of technology and traditional values. Based on the idea of creating unique digital assets **NFT** that will be used for vital records such as weddings.
 
@@ -20,25 +20,25 @@ Owners of **Far Far Away** golden rings - the jury of this fabulous beauty conte
 
 In our vision of the future, technology becomes the key to creating new, decentralized structures of power and public administration. Instead of replacing old institutions, we propose using technology to create a decentralized open society where each person controls their own voice and choice.
 
-Welcome to **Far Far Away**, a world where dreams come true and beauty is an integral part of our fabulous reality. We are proud to present our decentralized beauty contest - **Miss Blockchain**, a platform where each participant is an inspiration, rewriting the rules of beauty.
+Welcome to **Far Far Away**, a world where dreams come true and beauty is an integral part of our fabulous reality. We are proud to present our decentralized beauty contest - **Miss Blockchain**, a platform where each participant is the inspiration for **999 years of the history of the Far Far Away royal dynasty**.
 
-## Status of contestants
+## Title of contestants
 
 ### Cinderella
 
-This is the initial status for all participants. As soon as unmarried women, aged 16 to 35, complete the quests [offered on the Zealy.io platform](https://zealy.io/c/4736/invite/lyKxhQNYU_Fp7ZiUB9eN-), they become Cinderellas. This status is confirmed by obtaining a unique NFT **Cinderella's Shoe**. Cinderella must actively participate in quests and tasks on the platform in order to pass to the next stage - casting.
+This is the starting title for all members. As soon as unmarried women, aged 16 to 35, complete the quests [offered on the Zealy.io platform](https://zealy.io/c/4736/invite/lyKxhQNYU_Fp7ZiUB9eN-), they become Cinderellas. This title is confirmed by obtaining a unique NFT **Cinderella's Shoe**. Cinderella must actively participate in quests and tasks on the platform in order to pass to the next stage - casting.
 
 ### Princess
 
-Each year, only 27 (9+9+9) Cinderellas can be selected for the final of the competition, where the owners of the golden rings of **Far Far Away** will vote for their favorites. The contestant with the most votes becomes the winner and receives the status of **Miss Blockchain** and the golden diadem of the princess of **Far Far Away**.
+Each year, only **27**(9+9+9) Cinderellas can be selected for the final of the competition, where the owners of the golden rings of **Far Far Away** will vote for their favorites. The contestant with the most votes becomes the winner and receives the title of **Miss Blockchain** and the golden diadem of the Princess of **Far Far Away**.
 
 ### Queen
 
-A princess who enters into a marriage union through a smart contract on the **Far Far Away** platform becomes the Queen. The Queen receives additional privileges and is more actively involved in the life and management of **Far Far Away**, and also receives the **Queen's golden ring** and the title **Her Majesty, Queen of the Far Far Away**
+A princess who enters into a marriage union through a smart contract on the **Far Far Away** platform becomes a **Queen** and receives additional privileges, wears a **Queen's gold ring** and the title **Her Majesty, Queen of Far Far Away**
 
 ### Queen
 
-Every year, one of all **Queens** is chosen by voting among the users of the platform. She becomes the **Queen**. Has the greatest influence in the Far Far Away Kingdom ** and enjoys the highest privileges, wears the ** golden crown of the Queen ** and the title ** Her Majesty, Queen of the Far Far Away Kingdom \*\*.
+The **Queen** is that each year one of the **Queens** is chosen by voting among the users of the platform. Has the greatest influence in the Far Far Away Kingdom ** and enjoys the highest privileges, wears the ** golden crown of the Queen ** and the title ** Her Majesty, Queen of the Far Far Away Kingdom \*\*.
 
 :::warning
 Violation of any of these rules may result in disqualification.
