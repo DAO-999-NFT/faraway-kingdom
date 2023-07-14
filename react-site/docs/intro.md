@@ -6,6 +6,8 @@ sidebar_label: About us
 
 ## Introduction
 
+> Monarchy came to the blockchain
+
 In **Far Far Away**, the magic of fairy tales becomes reality. This is the space where **Cinderella** will turn into a princess. The fairy tale will come true in the digital age in the **Miss Blockchain** beauty contest, where each participant will receive a **Cinderella's NFT shoe** - a symbol of hope, transformation and the beginning of a new life.
 
 Thus begins the path to greatness, during which they can become one of the **999** princesses that will be elected every year, one at a time, for **999** years. And one day the princess will become queen by making an alliance in the smart contract **NFT** of the registry office of **Far Far Away**.
@@ -38,7 +40,7 @@ A princess who enters into a marriage union through a smart contract on the **Fa
 
 ### Queen
 
-The **Queen** is that each year one of the **Queens** is chosen by voting among the users of the platform. Has the greatest influence in the Far Far Away Kingdom ** and enjoys the highest privileges, wears the ** golden crown of the Queen ** and the title ** Her Majesty, Queen of the Far Far Away Kingdom \*\*.
+The **Queen** is that each year one of the **Queens** is chosen by voting among the users of the platform. Has the greatest influence in the **Far Far Away Kingdom** and enjoys the highest privileges, wears the golden crown of the Queen ** and the title ** Her Majesty, Queen of the **Far Far Away Kingdom**.
 
 :::warning
 Violation of any of these rules may result in disqualification.
@@ -57,8 +59,8 @@ Violation of any of these rules may result in disqualification.
 - This ring is part of a large ecosystem known as **Far Far Away**, and gives the owner the right to control this ecosystem.
 - When you buy a ring, you also get **0.5** of **$ZLATO** token, which supposedly has additional value in this ecosystem or market.
 - Access to a closed community of investors.
-
-:::
+- The right to vote for the princess.
+  :::
 
 ## $ZLATO
 
@@ -66,7 +68,7 @@ This is a **Far Far Away** token with a total of **999**. It is a blockchain-bas
 
 ![golden_ring](/img/intro/golden_rings9.png)
 
-Yes, each **Far Far Away** gold ring is not only a unique piece of jewelry, but also a digital certificate to one of the **999** royal lands in the **Far Far Away** metaverse. This is part of a magical world where you will find additional opportunities and great adventures within the blockchain ecosystem.
+Yes, each **Far Far Away** gold ring is not only a unique piece of jewelry, but also a digital certificate to one of the **999** royal lands in the **Far Far Away** metaverse. It is part of a magical online and offline world, where you will find additional opportunities and great adventures within the blockchain ecosystem.
 
 When you purchase a **Far Far Away** gold ring, you not only become the owner of a beautiful gold piece of jewelry, but also a digital asset that gives you access to your own royal land in the blockchain world.
 
@@ -98,7 +100,7 @@ All these unique aspects make **Far Far Away** rings special. Not only do you ge
 
 ## Is it really a valuable investment?
 
-Definitely one of the most unique investment opportunities today. Gold has always been a stable asset and **NFT** is rapidly gaining popularity as a form of digital art and value. With Far Far Away\*\* you get the best of both worlds.
+Gold has always been a stable asset and **NFT** is rapidly gaining popularity as a form of digital art and value. With **Far Far Away** you get the best of both worlds.
 
 ![golden_ring](/img/intro/golden_rings1.png)
 
@@ -219,7 +221,7 @@ Total number of tokens: **999**:
 3. Partners and ecosystem: 5% (49.95) - this part of the project team and advisors will be used to support partnerships, stimulate the development of the ecosystem and collaborate with other projects and platforms.
 4. Reserves: 10% (99.9) - will be held in reserve to maintain liquidity, conduct future funding rounds and manage unexpected events.
 5. Marketing and community development: 5% (49.95) - will be used for marketing activities, PR, project promotion, and community development and support.
-6. Bounties and Reward Programs: 10% (99.9) - This portion of tokens will be used for bounty programs, which may include token rewards, bounties, airdrops and other incentives for community members.
+6. Bounty and reward programs: 10% (99.9) - this part of the tokens will be used to reward contest participants.
 
 ```mermaid
 pie
@@ -229,7 +231,7 @@ pie
      "Partners and Ecosystem: 5%" : 49.95
      "Reserves: 10%" : 99.9
      "Marketing and community development: 5%" : 49.95
-     "Bounty and reward programs: 10%" : 99.9
+    "Contestants: 10%" : 99.9
 
 ```
 
@@ -288,7 +290,7 @@ Tokens can be distributed to investors through a smart contract or a third party
 
 ## Roadmap - Development Plan
 
-### Q2 2023: Preparing the MVP
+### Q3 2023: Preparing the MVP
 
 - Platform branding and creation of a **NFT**-collection of **999** rings.
 - UX design of the marketplace.
@@ -296,28 +298,28 @@ Tokens can be distributed to investors through a smart contract or a third party
 - Agreements with jewelry manufacturers and the signing of the first contracts.
 - Private sales of $ZLATO cryptocurrency.
 
-### Q3 2023: Alpha tests, start of marketing
+### Q4 2023: Alpha tests, start of marketing
 
 - Creation of a community in Telegram, Twitter and Discord.
 - Preparation of the first creatives in cooperation with artists and jewelers.
 - Involving users in the passage of quests.
-
-### Q4 2023: Beta testing, marketing
-
-- Connection of digital user profiles and identification.
-- Launching a contest for creating custom creatives and filling digital profiles.
-- Airdrops, launch of the referral program.
-- Preparation of articles, publications, PR plan, interaction with influencers and the media.
 - Listing of the **$ZLATO** token on cryptocurrency exchanges.
 
-### Q1 2024: Launch of MVP, expansion of functionality
+### Q1 2024: Beta testing, marketing
+
+- Connection of digital user profiles and identification.
+- Launching a contest for creating custom creatives and filling out digital profiles.
+- Airdrops, launch of the referral program.
+- Preparation of articles, publications, PR plan, interaction with influencers and the media.
+
+### Q2 2024: Launch of MVP, expansion of functionality
 
 - Creation of a dating module.
 - Expanding the functionality of digital user profiles.
 - Integration with the party and ticketing module.
 - Offline advertising campaign to attract new jewelry suppliers.
 
-### Q2-Q4 2024: Development of the metaverse
+### Q3-Q4 2024: Development of the metaverse
 
 - Modeling and visualization of digital avatars for users.
 - Development of the game engine, game mechanics and UX/UI.
@@ -330,7 +332,7 @@ The [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE2
 
 ## Consumer segments.
 
-The main consumer segments of the metaverse [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) are clubbers, promoters and event organizers who are interested in owning and trading in-game assets, as well as in unique and collectible \* \*NFT\*\*.
+The main consumer segments of the metaverse [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) are clubbers, promoters and event organizers who are interested in owning and trading in-game assets, as well as in unique and collectible **NFT**.
 
 ## Value propositions:
 
