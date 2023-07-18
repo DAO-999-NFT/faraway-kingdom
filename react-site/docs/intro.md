@@ -164,6 +164,27 @@ This application represents not only a revolution in the field of investments, b
 
 ![app999](/img/intro/app-999.png)
 
+## Far Away Matrix
+
+Do you know how we draw numbers like 1, 2, 3, and so on? If you think about it, they look like weird pictures, right? The number one can still be written from one line, but the number 2 does not look like two parts, right? Therefore, the logic of how the numbers are depicted and what they are does not correspond to reality.
+
+![digits](/img/watch/digits.png)
+
+So we came up with a new way of representing the numbers that we draw inside three triangles, each of which has 9 parts. We use these parts to show units, tens and hundreds.
+
+![numbers](/img/watch/numbers.png)
+
+In this new way, we can show all numbers up to 999, which is solar noon on our clock relative to your geolocation, and zero is when the sun is at solar midnight. We draw the numbers clockwise, just like on a normal clock.
+
+![hourglass](/img/watch/hourglass.png)
+
+The inverted triangle of the matrix is not chosen by chance, since the decentralized world needs a decentralized clock, but the most interesting thing is that, by analogy, we can also show the letters by drawing them counterclockwise. It's like a magical compass that can show time, numbers and letters at the same time!
+
+![alphabet](/img/watch/alphabet.png)
+
+And you know what else is funny? Since we also have letters, we get a display of the AI's mouth through which it can communicate with us.
+Every time he says something, we will see how these triangles and their parts change and move.
+
 ## Why should you trust us?
 
 We have a deep understanding of the world of gold and **NFT** technology. We have all the necessary knowledge and experience to provide you with a high quality product and secure interaction.
