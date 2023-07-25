@@ -5,6 +5,7 @@ import {
   BlockchainNetworks,
 } from 'src/constants/blockchainNetData';
 
+import Ringnft from 'img/ringnft.gif';
 import SoldOutIcon from 'img/SoldOut.png';
 
 interface NftCardProps {
@@ -52,7 +53,7 @@ export function NftCard({
       }}
       className="flex items-end relative overflow-hidden border-4 border-solid border-white">
       <img
-        src={img}
+        src={Ringnft}
         style={{
           width: h,
           height: h,

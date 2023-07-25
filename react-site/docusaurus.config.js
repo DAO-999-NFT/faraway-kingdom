@@ -166,6 +166,7 @@ const config = {
               {
                 label: 'Vk',
                 href: 'https://vk.com/dao999nft',
+                
               },
             ],
           },
