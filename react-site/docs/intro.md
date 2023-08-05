@@ -358,14 +358,14 @@ Tokens can be distributed to investors through a smart contract or a third party
 - Integration with the party and ticketing module.
 - Offline advertising campaign to attract new jewelry suppliers.
 
-### Q3-Q4 2024: Development of the metaverse
+### Q3 2024: Development of the metaverse
 
 - Modeling and visualization of digital avatars for users.
 - Development of the game engine, game mechanics and UX/UI.
 - Integration with smart contracts.
 - Alpha testing of the metaverse.
 
-## Value propositions:
+<!-- ## Value propositions:
 
 The [DAO 999 NFT](https://www.xdao.app/137/dao/0x8e7b1334d184c04B2DAc1dfF03F7fE290e5A5a47) Metaverse offers its consumers several unique value propositions, including:
 
@@ -438,7 +438,7 @@ The main costs of the metaverse project [DAO 999 NFT](https://www.xdao.app/137/d
 - Marketing and community building costs.
 - Operating expenses, including salaries and employee benefits.
 - Costs associated with creating and maintaining partnerships.
-- Compliance costs for legal and regulatory requirements.
+- Compliance costs for legal and regulatory requirements. -->
 
 ## Project author
 
